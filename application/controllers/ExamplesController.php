@@ -53,6 +53,7 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	public function rialtoAjaxAction() {
 		$this->view->success = true;
 	}
+	public function rialtoImageScrollSwitchAction() {}
 	
 	public function noAccessAction() {}
 	

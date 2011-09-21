@@ -16,6 +16,7 @@
 	<li><a href='{$siteRoot}/examples/rialto-ending-callback'>Ending Callback</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-rollover-image'>Rollover Image</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-ajax'>Ajax</a></li>
+	<li><a href='{$siteRoot}/examples/rialto-image-scroll-switch'>Image Scroll Switch</a></li>
 </ul>
 
 <h3>Fx</h3>
