@@ -4,7 +4,7 @@
 <head>
 	<meta charset='utf-8' />
 	
-    {include file="$documentRoot/$siteRoot/header.html"}
+    {include file="$documentRoot/$siteRoot/js/header.html"}
     
 	<title>DR - HTML SPEC</title>
 </head>
