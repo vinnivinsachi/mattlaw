@@ -36,6 +36,8 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	
 	public function rialtoAction() {}
 	public function rialtoGetPluginAction() {}
+	public function rialtoCallbacksAction() {}
+	public function rialtoClickOnLoadAction() {}
 	public function rialtoDatePickerAction() {}
 	public function rialtoDeleteAction() {}
 	public function rialtoDialogAction() {}
@@ -54,6 +56,11 @@ class ExamplesController extends Custom_Zend_Controller_Action
 		$this->view->success = true;
 	}
 	public function rialtoImageScrollSwitchAction() {}
+	public function rialtoInfiniteScrollAction() {
+		/*$elmts = array();
+		for(var $i=1; );
+		$this->view->elmts = */
+	}
 	
 	public function noAccessAction() {}
 	

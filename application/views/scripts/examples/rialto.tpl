@@ -1,6 +1,8 @@
 <h3>Rialto Javascripts</h3>
 <ul>
 	<li><a href='{$siteRoot}/examples/rialto-get-plugin'>How To Get A Plugin</a></li>
+	<li><a href='{$siteRoot}/examples/rialto-callbacks'>Callbacks</a></li>
+	<li><a href='{$siteRoot}/examples/rialto-click-on-load'>Click On Load</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-date-picker'>Date Picker</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-delete'>Delete</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-dialog'>Dialog</a></li>
@@ -17,6 +19,7 @@
 	<li><a href='{$siteRoot}/examples/rialto-rollover-image'>Rollover Image</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-ajax'>Ajax</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-image-scroll-switch'>Image Scroll Switch</a></li>
+	<li><a href='{$siteRoot}/examples/rialto-infinite-scroll'>Infinite Scroll</a></li>
 </ul>
 
 <h3>Fx</h3>
