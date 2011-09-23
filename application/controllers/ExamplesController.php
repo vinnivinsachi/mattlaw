@@ -7,6 +7,7 @@ class ExamplesController extends Custom_Zend_Controller_Action
     	parent::init();  // Because this is a custom controller class
 
 		$this->_ajaxContext->addActionContext('rialto-ajax', 'json')
+						   ->addActionContext('rialto-pagination-load', 'json')
 			 			   ->initContext();
 
 		// get a requested variable
@@ -29,7 +30,6 @@ class ExamplesController extends Custom_Zend_Controller_Action
 		if($this->_request->isPost()) {
 			$formName = 'uploadForm'; // the name of upload form
 			$processResult = Application_Process_Main::runProcess('Application_Process_Image::saveImagesFromForm', array($formName)); // process images from the form
-			//Zend_Debug::dump($processResult);
 		}
 	}
 
@@ -52,14 +52,28 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	public function rialtoTooltipAction() {}
 	public function rialtoEndingCallbackAction() {}
 	public function rialtoRolloverImageAction() {}
+	
 	public function rialtoAjaxAction() {
 		$this->view->success = true;
 	}
-	public function rialtoImageScrollSwitchAction() {}
-	public function rialtoInfiniteScrollAction() {
-		/*$elmts = array();
-		for(var $i=1; );
-		$this->view->elmts = */
+	
+	public function rialtoImageScrollSwitchAction() {
+	}
+	
+	public function rialtoPaginationAction() {
+		$this->rialtoPaginationLoad();
+	}
+	public function rialtoPaginationLoadAction() {
+		$page = $this->_request->getParam('page');
+		$this->rialtoPaginationLoad(10, $page);
+	}
+	private function rialtoPaginationLoad($count=10, $page=1) {
+		$elmts = array();
+		for($i=1; $i <= $count; $i++) {
+			$elmts[] = $page;
+		}
+		$this->view->elmts = $elmts;
+		$this->view->color = rand(0, 9).'f'.rand(0, 9).'f'.rand(0, 9).'f';
 	}
 	
 	public function noAccessAction() {}

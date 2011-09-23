@@ -8,7 +8,7 @@
     
 	<title>DR - HTML SPEC</title>
 </head>
-<body onUnload=''>
+<body id='body' onUnload=''>
 {literal}
 	<script type='text/javascript'>
 		$j(document).ready(function(){      
