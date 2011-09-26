@@ -2,7 +2,7 @@
 
 <div id='elements-list'>
 {foreach from=$elmts item=page}
-	<div class='sample' style='background-color:#{$color}'>PAGE: {$page}</div>
+	<div class='sample rPaginationElmt' style='background-color:#{$color}'>PAGE: {$page}</div>
 {/foreach}
 </div>
 
