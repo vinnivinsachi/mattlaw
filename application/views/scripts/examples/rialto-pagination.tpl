@@ -1,17 +1,31 @@
 {rialtoExample}
 
 <div id='elements-list'>
-{foreach from=$elmts item=page}
-	<div class='sample rPaginationElmt' style='background-color:#{$color}'>PAGE: {$page}</div>
+{foreach from=$elmts item=elmt}
+	<div class='sample {$elmt.class}' {if $elmt.class}rialtoPaginationPage='{$elmt.page}'{/if} style='background-color:#{$elmt.color}'>PAGE: {$elmt.page}</div>
 {/foreach}
 </div>
 
-<div class='rialtoPagination'>
-	<ul>
-		<li>1</li>
-		<li><a class='rialtoAjaxLink' rialtoAppendTargetID='elements-list' href='{$siteRoot}/examples/rialto-pagination-load/page/2'>2</a></li>
-		<li>3</li>		
-	</ul>
+<div class='rPagination' href='{$siteRoot}/examples/rialto-pagination-load' rialtoPaginationListID='elements-list'>
+	<div class='rPaginationViewport'>
+		<ul>
+			<li><a>1</a></li>
+			<li><a>2</a></li>
+			<li><a>3</a></li>
+			<li><a>4</a></li>
+			<li><a>5</a></li>
+			<li><a>6</a></li>
+			<li><a>7</a></li>
+			<li><a>8</a></li>
+			<li><a>9</a></li>
+			<li><a>10</a></li>
+			<li><a>11</a></li>
+			<li><a>12</a></li>
+			<li><a>13</a></li>
+			<li><a>14</a></li>
+			<li><a>15</a></li>
+		</ul>
+	</div>
 </div>
 
 {literal}

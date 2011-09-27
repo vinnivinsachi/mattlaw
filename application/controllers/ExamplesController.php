@@ -61,9 +61,9 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	}
 	
 	public function rialtoPaginationAction() {
-		$this->rialtoPaginationLoad(10, 1);
-		$this->rialtoPaginationLoad(10, 2);
-		$this->rialtoPaginationLoad(10, 3);
+		//$this->rialtoPaginationLoad(10, 1);
+		//$this->rialtoPaginationLoad(10, 1);
+		$this->rialtoPaginationLoad(10, 20);
 	}
 	public function rialtoPaginationLoadAction() {
 		$page = $this->_request->getParam('page');
@@ -72,11 +72,13 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	private function rialtoPaginationLoad($count=10, $page=1) {
 		$elmts = $this->view->elmts;
 		if(!$elmts) $elmts = array();
+		$color = rand(0, 9).'f'.rand(0, 9).'f'.rand(0, 9).'f';
 		for($i=1; $i <= $count; $i++) {
-			$elmts[] = $page;
+			$elmt = array('page'=>$page, 'color'=>$color);
+			if($i == 1) $elmt['class'] = 'rPaginationPageTop';
+			$elmts[] = $elmt;
 		}
 		$this->view->elmts = $elmts;
-		$this->view->color = rand(0, 9).'f'.rand(0, 9).'f'.rand(0, 9).'f';
 	}
 	
 	public function noAccessAction() {}
