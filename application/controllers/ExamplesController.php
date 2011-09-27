@@ -61,9 +61,9 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	}
 	
 	public function rialtoPaginationAction() {
-		//$this->rialtoPaginationLoad(10, 1);
-		//$this->rialtoPaginationLoad(10, 1);
-		$this->rialtoPaginationLoad(10, 20);
+		$this->rialtoPaginationLoad(10, 1);
+		$this->rialtoPaginationLoad(10, 3);
+		$this->rialtoPaginationLoad(10, 5);
 	}
 	public function rialtoPaginationLoadAction() {
 		$page = $this->_request->getParam('page');
