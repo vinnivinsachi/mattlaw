@@ -6,7 +6,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 	// initialize autoloading
 	public function _initAutoload() {
 		$autoloader = Zend_Loader_Autoloader::getInstance();
-		$autoloader->setFallbackAutoloader(true);
+		$autoloader->setFallbackAutoloader(false);
+		$autoloader->registerNamespace('Custom_');
 		// custom paths
 		// TODO MARK: make sure this is efficient implementation
 			$resourceLoader = new Zend_Loader_Autoloader_Resource(array(
