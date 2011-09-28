@@ -7,6 +7,10 @@
 </div>
 
 <div class='rPagination' href='{$siteRoot}/examples/rialto-pagination-load' rialtoPaginationListID='elements-list'>
+	<div class='rPaginationViewportCurrent'></div>
+	<a id='rPaginationFirst'>&lt;&lt;</a>
+	&nbsp;
+	<a id='rPaginationPrev'>&lt;</a>
 	<div class='rPaginationViewport'>
 		<ul>
 			<li><a>1</a></li>
@@ -26,6 +30,9 @@
 			<li><a>15</a></li>
 		</ul>
 	</div>
+	<a  id='rPaginationNext'>&gt;</a>
+	&nbsp;
+	<a  id='rPaginationLast'>&gt;&gt;</a>
 </div>
 
 {literal}
