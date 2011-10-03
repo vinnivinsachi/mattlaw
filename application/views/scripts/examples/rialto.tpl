@@ -22,7 +22,11 @@
 	<li><a href='{$siteRoot}/examples/rialto-pagination'>Pagination</a></li>
 </ul>
 
+<div class='spacer-medium'></div>
+
 <h3>Fx</h3>
 <ul>
+	<li><a href='{$siteRoot}/examples/rialto-fx-fade-out'>Fade Out</a></li>
+	<li><a href='{$siteRoot}/examples/rialto-fx-fade-in'>Fade In</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-fx-highlight'>Highlight</a></li>
 </ul>

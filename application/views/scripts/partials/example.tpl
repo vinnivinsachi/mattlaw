@@ -2,7 +2,6 @@
 	EXAMPLE PARTIAL!!!
 	<span id='test-span'>TEST SPAN</span>
 	<br /><br />
-	{$example}
 	
 	<span class='rialtoClickOnLoad' rialtoInitCallback='autoClick'>AUTO CLICKED</span>
 	

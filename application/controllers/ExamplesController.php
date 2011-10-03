@@ -83,5 +83,11 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	
 	public function noAccessAction() {}
 	
+	
+	// FX
+	public function rialtoFxFadeOutAction() {}
+	public function rialtoFxFadeInAction() {}
+	public function rialtoFxHighlightAction() {}
+	
 }
 

@@ -4,7 +4,7 @@
 
 	<div class='spacer-medium'></div>
 
-	<form class='rialtoForm' rialtoCallback='loginCallback' action='{$siteRoot}/authentication/authenticate' method='post'>
+	<form class='rialtoForm rialtoJsonForm' rialtoResponseCallback='loginCallback' action='{$siteRoot}/authentication/authenticate' method='post'>
 
 	    <div>
 	       	<label class='required' for='login-email'>Email</label>
