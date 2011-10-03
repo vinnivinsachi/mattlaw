@@ -9,8 +9,6 @@
 	<title>DR - HTML SPEC</title>
 </head>
 <body id='body' onUnload=''>
-
-<div id='rialto-loading-image-overlay' style='display:none; opacity:0'><img src='/Sites/zend_basic/public/images/loading.gif'></div>
 	
 {literal}
 	<script type='text/javascript'>
