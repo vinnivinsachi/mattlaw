@@ -1,31 +1,43 @@
 {rialtoExample}
 
-<div class='rialtoImageBook rib-medium'>
+<div id='book' class='rImageBook rib-medium'>
 	<div class='rImageBook-main-image'>
-		<img src='{$dirImages}/categories/mens-latin-pants/design/markisacat/_1/_gown_medium.jpg' />
+		<img src='{$dirImages}/rialtoImageBook/1/1_medium.jpg' />
 	</div>
 	<ul id='rialto-image-book-medium-thumbs'>
-		<li class='selected'>
-			<a href='{$dirImages}/categories/mens-latin-pants/design/markisacat/_1/_gown_medium.jpg'>
-				<img src='{$dirImages}/categories/mens-latin-pants/design/markisacat/_1/_gown_thumb_medium.jpg' />
+		<li>
+			<a href='{$dirImages}/rialtoImageBook/2/2_medium.jpg'>
+				<img src='{$dirImages}/rialtoImageBook/2/2_small.jpg' />
 			</a>
 		</li>
 		<li>
-			<a href='{$dirImages}/categories/mens-latin-pants/design/markisacat/_2/_gown2_medium.jpg'>
-				<img src='{$dirImages}/categories/mens-latin-pants/design/markisacat/_2/_gown2_thumb_medium.jpg' />
+			<a href='{$dirImages}/rialtoImageBook/3/3_medium.jpg'>
+				<img src='{$dirImages}/rialtoImageBook/3/3_small.jpg' />
 			</a>
 		</li>
 		<li>
-			<a href='{$dirImages}/categories/mens-latin-pants/design/markisacat/_3/_shoes_medium.jpg'>
-				<img src='{$dirImages}/categories/mens-latin-pants/design/markisacat/_3/_shoes_thumb_medium.jpg' />
-			</a>
-		</li>
-		<li>
-			<a href='{$dirImages}/categories/mens-latin-pants/design/markisacat/_4/_shoes2_medium.jpg'>
-				<img src='{$dirImages}/categories/mens-latin-pants/design/markisacat/_4/_shoes2_thumb_medium.jpg' />
+			<a href='{$dirImages}/rialtoImageBook/4/4_medium.jpg'>
+				<img src='{$dirImages}/rialtoImageBook/4/4_small.jpg' />
 			</a>
 		</li>
 	</ul>
 </div>
+
+
+<div class='spacer-large'></div>
+
+<button onclick='addImage()'>Add One</button>
+
+{literal}
+<script type='text/javascript'>
+	function addImage() {
+		$Rialto.getPlugin('RialtoImageBook').addImageToBook(
+			$('book'),
+			'{/literal}{$dirImages}/rialtoImageBook/5/5_medium.jpg{literal}',
+			'{/literal}{$dirImages}/rialtoImageBook/5/5_small.jpg{literal}'
+		);
+	}
+</script>
+{/literal}
 
 {/rialtoExample}
