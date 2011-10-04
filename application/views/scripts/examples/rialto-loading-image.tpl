@@ -1,6 +1,6 @@
 {rialtoExample}
 
-<div id='loadingImageParent' style='position:relative; height:200px;'></div>
+<div id='loadingImageParent' style='height:200px;'></div>
 
 <button onclick='showLoading()'>Show the loading image</button>
 &nbsp;&nbsp;&nbsp;
