@@ -1,11 +1,7 @@
 <?php
 
-class IndexController extends Custom_Zend_Controller_Action
+class IndexController extends Application_Controller
 {
-
-    public function init() {
-    	parent::init();  // Because this is a custom controller class
-    }
 
     public function indexAction() {}
 
