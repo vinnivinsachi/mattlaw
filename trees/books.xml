@@ -2,22 +2,20 @@
 <design1>
 	<blue>
 		<leather>
-			<heel1/>
-			<heel2/>
+			<heel1 qty="1"/>
+			<heel2 qty="2"/>
 		</leather>
-		<cotton>
-			<heel1/>
-		</cotton>
+		
 	</blue>
 	<red>
 		<cotton>
-			<heel1/>
+			<heel1 qty="2"/>
 		</cotton>
 	</red>
 	<orange>
 		<leather>
-			<heel1/>
-			<heel2/>
+			
+			<heel2 qty="5"/>
 		</leather>
 	</orange>
 </design1>
