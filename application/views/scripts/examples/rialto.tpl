@@ -20,6 +20,7 @@
 	<li><a href='{$siteRoot}/examples/rialto-ajax'>Ajax</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-image-scroll-switch'>Image Scroll Switch</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-pagination'>Pagination</a></li>
+	<li><a href='{$siteRoot}/examples/rialto-palette'>Palette</a></li>
 </ul>
 
 <div class='spacer-medium'></div>

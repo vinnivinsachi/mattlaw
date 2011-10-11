@@ -52,6 +52,7 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	public function rialtoTooltipAction() {}
 	public function rialtoEndingCallbackAction() {}
 	public function rialtoRolloverImageAction() {}
+	public function rialtoPaletteAction() {}
 	
 	public function rialtoAjaxAction() {
 		$this->view->success = true;

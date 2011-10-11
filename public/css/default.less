@@ -1981,57 +1981,6 @@
 	}
 
 
-/* [29] PALETTES */
-	.palette {
-		display: inline-block;
-		width: 215px;
-		margin: 0px;
-		padding: 5px;
-		border: 1px solid @colorLine;
-		background-color: @bgColor;
-		.rounded-corners();
-		li {
-			display: inline-block;
-			float: none;
-			margin: 2px;
-			padding: 0px;
-		}
-		li.selected {
-			.color, .toggle {
-				border: 1px solid @bgColor;
-				.box-shadow(0px, 0px, 4px, 2px, @colorBase, 0% );
-			}
-		}
-		li:hover {
-			.color, .toggle {
-				border: 1px solid @colorBase;
-			}
-		}
-		.toggle { width: 57px; }
-	}
-	
-/* MATERIAL */
-	ul.material {
-		.palette;
-	}
-	
-
-/* FASHION */
-	ul.fashion {
-		.palette;
-		width: 345px;
-		.toggle { width: 100px; }
-	}
-
-
-/* STYLE */
-	ul.style {
-		.palette;
-		width: 345px;
-		.toggle { width: 100px; }
-	}
-
-
 /* ============================================= MODULES GENERIC ====================================== */
 /* [30] FORM */
 	input.small { width: 50px; }
@@ -3200,57 +3149,6 @@
 	}
 	
 	.flag-us { background-position: 0px 0px; }
-
-
-/* ============================================= COLORS ====================================== */
-	.color {
-		display: inline-block;
-		overflow: hidden;
-		width: 20px;
-		height: 20px;
-		margin: 0px;
-		padding: 0px;
-		border: 1px solid @colorLine;
-		.rounded-corners();
-		cursor: pointer;
-	}
-	
-	.color-red { background-color: #ff0000; }
-	.color-orange { background-color: #ffa500; }
-	.color-yellow { background-color: #ffff00; }
-	.color-green { background-color: #008000; }
-	.color-blue { background-color: #0000ff; }
-	.color-purple { background-color: #4b0082; }
-	.color-pink { background-color: #ee82ee; }
-	.color-brown { background-color: #5c4033; }
-	.color-tan { background-color: #e0caae; }
-	.color-black { background-color: #000000; }
-	.color-grey { background-color: #999999; }
-	.color-white { background-color: #ffffff; }
-	.color-other {
-		background-color: @bgColor;
-		background-image: url(../images/color-other.png);
-	}
-	
-	
-/* ============================================= TOGGLE ====================================== */
-	.toggle {
-		.color;
-		width: 70px;
-		height: 16px;
-		text-align: center;
-		padding: 1px 3px 3px 3px;
-		&:hover {
-			border: 1px solid @colorBase;
-		}
-		&.selected {
-			border: 1px solid @bgColor;
-			.box-shadow(0px, 0px, 4px, 2px, @colorBase, 0% );
-		}
-		&.unavailable {
-			color: @colorLine;
-		}
-	}
 	
 	
 /* ============================================= SNIPPETS ====================================== */
