@@ -28,7 +28,7 @@
 			<td>Some Info</td>
 			<td>More Info</td>
 		</tr>
-		<tr class='rTableAccordionHidden' rTableURL='{$siteRoot}/partials/content'>
+		<tr class='rTableAccordionHidden' rialtoTableURL='{$siteRoot}/partials/content'>
 			<td colspan=3>
 				<div class='rTableAccordionContent'>
 					<div>CONTENT 2!</div>
@@ -41,7 +41,7 @@
 			<td>Some Info</td>
 			<td>More Info</td>
 		</tr>
-		<tr class='rTableAccordionHidden' rTableURL='{$siteRoot}/partials/content' rTableFormID='example-form'>
+		<tr class='rTableAccordionHidden' rialtoTableURL='{$siteRoot}/partials/content' rialtoTableFormID='example-form'>
 			<td colspan=3>
 				<div class='rTableAccordionContent'></div>
 			</td>
