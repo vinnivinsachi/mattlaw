@@ -15,6 +15,9 @@ class PartialsController extends Custom_Zend_Controller_Action
 	}
 	
 	public function exampleAction() {}
+	public function contentAction() {
+		$this->view->exampleText = $this->_request->getParam('exampleText');
+	}
 
 }
 

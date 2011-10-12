@@ -47,12 +47,12 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	public function rialtoLoadReplacesAction() {}
 	public function rialtoPopupAction() {}
 	public function rialtoScrollAction() {}
-	public function rialtoTableAction() {}
 	public function rialtoTabsAction() {}
 	public function rialtoTooltipAction() {}
 	public function rialtoEndingCallbackAction() {}
 	public function rialtoRolloverImageAction() {}
 	public function rialtoPaletteAction() {}
+	public function rialtoTableAccordionAction() {}
 	
 	public function rialtoAjaxAction() {
 		$this->view->success = true;

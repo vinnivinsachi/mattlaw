@@ -12,7 +12,6 @@
 	<li><a href='{$siteRoot}/examples/rialto-load-replaces'>Load Replaces</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-popup'>Popup</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-scroll'>Scroll</a></li>
-	<li><a href='{$siteRoot}/examples/rialto-table'>Table</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-tabs'>Tabs</a></li>	
 	<li><a href='{$siteRoot}/examples/rialto-tooltip'>Tooltip</a></li>	
 	<li><a href='{$siteRoot}/examples/rialto-ending-callback'>Ending Callback</a></li>
@@ -21,6 +20,7 @@
 	<li><a href='{$siteRoot}/examples/rialto-image-scroll-switch'>Image Scroll Switch</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-pagination'>Pagination</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-palette'>Palette</a></li>
+	<li><a href='{$siteRoot}/examples/rialto-table-accordion'>Table Accordion</a></li>
 </ul>
 
 <div class='spacer-medium'></div>
