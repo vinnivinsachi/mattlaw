@@ -1,7 +1,7 @@
 {rialtoExample}
-
+<form>
 <ul>
-	<ul class='rPalette rPaletteInverted rPaletteLarge' rPaletteMaxSelections='2' rPaletteClickElmtSelector='> li' rPaletteCheckboxSelector='> input' rPalettePreDispatch='preDispatch' rPalettePostDispatch='postDispatch'>
+	<ul class='rPalette rPaletteInverted rPaletteLarge' rPaletteMaxSelections='2' rPaletteClickElmtSelector='> li' rPalettePreDispatch='preDispatch' rPalettePostDispatch='postDispatch'>
 		<li>
 			<span class='rPaletteColor rPaletteColor-red' title='Red'></span>
 			<input class='hidden' type='checkbox' name='filters[color][red]' />
@@ -45,6 +45,9 @@
 		</li>
 	</ul>			
 </ul>
+
+<input type='submit' value='sdf' />
+</form>
 
 {literal}
 <script type='text/javascript'>
