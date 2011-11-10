@@ -1,13 +1,14 @@
 {rialtoExample}
 
-<a href='{$siteRoot}/examples/rialto-ajax/layout/none' class='RialtoLink' rialtoInitCB='init'  rialtoClosureCB='closure' >AJAX LINK</a>
+<a href='{$siteRoot}/partials/empty' class='RialtoLink:json' rialtoInitCB='init' rialtoClosureCB='closure' >CLICK ME!</a>
 
 {literal}
 <script type='text/javascript'>	
-	function init() {
+	function init(elmt) {
 		alert('init');
 		return true;
 	}
+
 	function closure() {
 		alert('closure');
 		return false;

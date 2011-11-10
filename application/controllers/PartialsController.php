@@ -6,6 +6,9 @@ class PartialsController extends Custom_Zend_Controller_Action
     public function init() {
     	parent::init();  // Because this is a custom controller class
 
+		$this->_ajaxContext->addActionContext('empty', 'json')
+			 			   ->initContext();
+
 		// get a requested variable
 			$var = $this->_request->getParam('paramName');
     }
@@ -18,6 +21,7 @@ class PartialsController extends Custom_Zend_Controller_Action
 	public function contentAction() {
 		$this->view->exampleText = $this->_request->getParam('exampleText');
 	}
+	public function emptyAction() {}
 
 }
 

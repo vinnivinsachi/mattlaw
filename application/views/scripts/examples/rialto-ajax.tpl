@@ -1,20 +1,13 @@
 {rialtoExample}
 
-<a href='{$siteRoot}/examples/rialto-ajax' class='rialtoLink' rialtoInitCB='init'>RIALTO LINK</a>
+<a href='{$siteRoot}/partials/example' class='RialtoLink:ajax' rialtoLinkRespCB='response' rialtoAjaxReplaceTargetID='self'>AJAX LINK</a>
 
 {literal}
 <script type='text/javascript'>
-	function init() {
-		alert('init');
+	function response(response, elmt) {
+		return true;
 	}
-	
-	function callback(elmt) {
-		//alert('callback');
-	}
-	
-	function preDispatch(elmt) {
-		//alert('preDispatch');
-	}
+
 </script>
 {/literal}
 

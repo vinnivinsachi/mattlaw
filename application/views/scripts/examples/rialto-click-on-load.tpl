@@ -1,6 +1,6 @@
 {rialtoExample}
 
-<span class='rialtoClickOnLoad' rialtoInitCallback='clicked'>AUTO CLICKED</span>
+<a class='rialtoClickOnLoad RialtoLink' rialtoInitCB='clicked'>AUTO CLICKED</a>
 
 {literal}
 <script type='text/javascript'>

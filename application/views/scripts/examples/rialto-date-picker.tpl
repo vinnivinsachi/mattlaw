@@ -1,5 +1,5 @@
 {rialtoExample}
 
-	Date: <input type='text' class='rDatePicker' />
+	Date: <input type='text' class='rialtoDatePicker' />
 
 {/rialtoExample}

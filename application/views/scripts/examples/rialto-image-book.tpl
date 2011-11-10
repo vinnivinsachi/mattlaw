@@ -1,23 +1,23 @@
 {rialtoExample}
 
-<div id='book' class='rImageBook rib-medium'>
-	<div class='rImageBook-main-image'>
+<div id='book' class='rialtoImageBook rib-medium'>
+	<div class='rialtoImageBook-main-image'>
 		<img src='{$dirImages}/rialtoImageBook/1/1_medium.jpg' />
 	</div>
 	<ul id='rialto-image-book-medium-thumbs'>
 		<li>
-			<a href='{$dirImages}/rialtoImageBook/2/2_medium.jpg'>
-				<img src='{$dirImages}/rialtoImageBook/2/2_small.jpg' />
+			<a>
+				<img src='{$dirImages}/rialtoImageBook/2/2_small.jpg' rialtoImageBookLargeImageURL='{$dirImages}/rialtoImageBook/2/2_medium.jpg' />
 			</a>
 		</li>
 		<li>
-			<a href='{$dirImages}/rialtoImageBook/3/3_medium.jpg'>
-				<img src='{$dirImages}/rialtoImageBook/3/3_small.jpg' />
+			<a>
+				<img src='{$dirImages}/rialtoImageBook/3/3_small.jpg' rialtoImageBookLargeImageURL='{$dirImages}/rialtoImageBook/3/3_medium.jpg' />
 			</a>
 		</li>
 		<li>
-			<a href='{$dirImages}/rialtoImageBook/4/4_medium.jpg'>
-				<img src='{$dirImages}/rialtoImageBook/4/4_small.jpg' />
+			<a>
+				<img src='{$dirImages}/rialtoImageBook/4/4_small.jpg' rialtoImageBookLargeImageURL='{$dirImages}/rialtoImageBook/4/4_medium.jpg' />
 			</a>
 		</li>
 	</ul>
