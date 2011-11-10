@@ -1,20 +1,16 @@
 {rialtoExample}
 
-<a href='{$siteRoot}/partials/example/layout/none' class='rialtoAjaxLink' rialtoInitCallback='init' rialtoPreDispatchCallback='preDispatch' rialtoResponseCallback='response' rialtoClosureCallback='closure'>AJAX CALL</a>
+<a href='{$siteRoot}/examples/rialto-ajax/layout/none' class='RialtoLink' rialtoInitCB='init'  rialtoClosureCB='closure' >AJAX LINK</a>
 
 {literal}
 <script type='text/javascript'>	
 	function init() {
 		alert('init');
-	}
-	function preDispatch() {
-		alert('preDispatch');
-	}
-	function response() {
-		alert('response');
+		return true;
 	}
 	function closure() {
 		alert('closure');
+		return false;
 	}
 </script>
 {/literal}

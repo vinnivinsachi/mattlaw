@@ -28,20 +28,21 @@
 						path: '{/literal}{$dirJS}/jquery/plugins/raty/img/{literal}',
 					});
 				});
-		
-		
-		
+				
 				// Rialto utility functions
 				$Rialto = new Rialto({
 					RialtoLoadingImage: {
 						url: '{/literal}{$dirImages}/loading.gif{literal}'
 					},
 				});
+				$Rialto.setup();
+				
+				
 
 				// Rialto plugin wrapper and event delegator
-				$RialtoPlugins = new RialtoPlugins({
+				/*$RialtoPlugins = new RialtoPlugins({
 					framework: 'zend',
-				});
+				});*/
 			
 		});
 
