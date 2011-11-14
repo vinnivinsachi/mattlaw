@@ -1,6 +1,6 @@
 {rialtoExample}
 
-<table class='rTableAccordion'>
+<table class='rialtoTableAccordion'>
 	<thead>
 		<tr>
 			<th scope='col'>Row<span class='icon icon-arrwo-up'></span></th>
@@ -10,25 +10,25 @@
 	</thead>
 	<tbody>
 		
-		<tr class='rialtoTableAccordionRow'>
+		<tr class='RialtoTableAccordion'>
 			<td>Loads a Load Replaces</td>
 			<td>Some Info</td>
 			<td>More Info</td>
 		</tr>
-		<tr class='rTableAccordionHidden'>
+		<tr class='rialtoTableAccordionHidden'>
 			<td colspan=3>
 				<div class='rTableAccordionContent'>
-					<span rialtoLoadReplacesURL='{$siteRoot}/partials/content'>SHOULD HAVE LOADED...</span>
+					<span class='rialtoLoadReplaces' rialtoLoadReplacesURL='{$siteRoot}/partials/content'>DOES NOT  CURRENTLY SUPPORT LOAD REPLACES</span>
 				</div>
 			</td>
 		</tr>
 		
-		<tr class='rialtoTableAccordionRow'>
+		<tr class='RialtoTableAccordion' rialtoTableURL='{$siteRoot}/partials/content'>
 			<td>Loads a URL</td>
 			<td>Some Info</td>
 			<td>More Info</td>
 		</tr>
-		<tr class='rTableAccordionHidden' rialtoTableURL='{$siteRoot}/partials/content'>
+		<tr class='rialtoTableAccordionHidden'>
 			<td colspan=3>
 				<div class='rTableAccordionContent'>
 					<div>CONTENT 2!</div>
@@ -36,12 +36,12 @@
 			</td>
 		</tr>
 		
-		<tr class='rialtoTableAccordionRow'>
+		<tr class='RialtoTableAccordion' rialtoTableURL='{$siteRoot}/partials/content' rialtoTableFormID='example-form'>
 			<td>Loads example form</td>
 			<td>Some Info</td>
 			<td>More Info</td>
 		</tr>
-		<tr class='rTableAccordionHidden' rialtoTableURL='{$siteRoot}/partials/content' rialtoTableFormID='example-form'>
+		<tr class='rialtoTableAccordionHidden'>
 			<td colspan=3>
 				<div class='rTableAccordionContent'></div>
 			</td>

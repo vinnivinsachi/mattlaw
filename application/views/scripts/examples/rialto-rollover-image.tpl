@@ -1,5 +1,5 @@
 {rialtoExample}
 
-<img class='rRolloverImage' src='{$dirImages}/rolloverImage.png' rialtoRolloverImageOver='rolloverImage_ghgh' />
+<img class='rialtoRolloverImage' src='{$dirImages}/rolloverImage.png' rialtoRolloverImageOver='rolloverImage_over' />
 
 {/rialtoExample}

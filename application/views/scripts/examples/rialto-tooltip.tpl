@@ -1,7 +1,7 @@
 {rialtoExample}
 
 <div style='padding-top:10px; padding-left:50px'>
-	<span class='rialtoTooltipClick'>
+	<span class='RialtoTooltip:click'>
 		<a><span class='icon icon-shipment'></span> Shipped </a>
 		<div class='rTooltipContent' style='width: 350px;'>
 			<div class='rTooltipTriggerOverlay'>

@@ -33,7 +33,7 @@
 				</li class='nav-logged-in nav-user'> <li class='nav-spacer nav-logged-in nav-user'> | </li>
 				
 				<li id='quickcart'>
-					<span class='rialtoTooltip rTooltipRight'>
+					<span class='RialtoTooltip:hover rTooltipRight'>
 						<a href='{$siteRoot}/shopping-cart' class='rialtoLink'>
 							<span class='icon icon-cart' title='Quick cart, click to see your detailed shopping cart.'></span> Cart
 						</a>

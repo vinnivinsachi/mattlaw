@@ -3,13 +3,13 @@
 <!-- TABS -->
 <ul>
 	<li>
-		<a href='#details' class='rialtoTabs rTabsCurrent' rialtoTabsGroup='example-tabs'>Details</a>
+		<a href='#details' class='RialtoTabs rTabsCurrent' rialtoTabsGroup='example-tabs'>Details</a>
 	</li>
 	<li>
-		<a href='#attributes' class='rialtoTabs' rialtoTabsActivateCallback='tabsCallback' rialtoTabsGroup='example-tabs'>Attributes</a>
+		<a href='#attributes' class='RialtoTabs' rialtoTabsPostDCB='tabsCallback' rialtoTabsGroup='example-tabs'>Attributes</a>
 	</li>
 	<li>
-		<a href='#image' class='rialtoTabs' rialtoTabsGroup='example-tabs'>Image </a>
+		<a href='#image' class='RialtoTabs' rialtoTabsGroup='example-tabs'>Image </a>
 	</li>
 </ul>
 

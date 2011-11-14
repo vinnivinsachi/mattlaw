@@ -1,5 +1,5 @@
 {rialtoExample}
 
-<a href='{$siteRoot}/partials/example' class='rialtoPopup'>Popup!</a>
+<a href='{$siteRoot}/partials/example' class='RialtoPopup:window'>Popup!</a>
 
 {/rialtoExample}
