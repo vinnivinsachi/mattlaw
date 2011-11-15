@@ -22,6 +22,7 @@
 	<li><a href='{$siteRoot}/examples/rialto-palette'>Palette</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-table-accordion'>Table Accordion</a></li>
 	<li><a href='{$siteRoot}/examples/rialto-dropdown'>Dropdown</a></li>
+	<li><a href='{$siteRoot}/examples/rialto-form'>Form</a></li>
 </ul>
 
 <div class='spacer-medium'></div>
