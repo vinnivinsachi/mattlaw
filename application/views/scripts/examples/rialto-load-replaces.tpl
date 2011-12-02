@@ -1,7 +1,7 @@
 {rialtoExample}
 
 <div id='loadReplacesParent'>
-	<span class='rialtoLoadReplaces' rialtoLoadReplacesURL='{$siteRoot}/partials/example' rialtoInitCallback='init' rialtoPreDispatchCallback='preDispatch' rialtoResponseCallback='response' rialtoClosureCallback='closure'>Should be replaced...</span>
+	<span class='RialtoLoadReplaces' rialtoLoadReplacesURL='{$siteRoot}/partials/example' rialtoInitCallback='init' rialtoPreDispatchCallback='preDispatch' rialtoResponseCallback='response' rialtoClosureCallback='closure'>Should be replaced...</span>
 	
 	<br />
 	
