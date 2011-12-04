@@ -34,6 +34,9 @@
 					RialtoLoadingImage: {
 						url: '{/literal}{$dirImages}/loading.gif{literal}'
 					},
+					RialtoStars: {
+						imgPath: '{/literal}{$dirImages}/RialtoStarsStars.gif{literal}'
+					}
 				});
 				$Rialto.setup();
 				

@@ -54,6 +54,7 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	public function rialtoPaletteAction() {}
 	public function rialtoTableAccordionAction() {}
 	public function rialtoDropdownAction() {}
+	public function rialtoStarsAction() {}
 	
 	public function rialtoAjaxAction() {
 		$this->view->success = true;
