@@ -1,5 +1,13 @@
 {rialtoExample}
 
-<span id='stars' class='rialtoStars' rialtoStarsCurrentRating='3'></span>
+<span id='stars' class='rialtoStars' rialtoStarsNumStars='7' rialtoStarsCurrentStar='4' rialtoStarsClickCB='onStarClick'></span>
+
+{literal}
+<script>
+	function onStarClick(star, starsContainer) {
+		alert('The star container: '+starsContainer+' was clicked!');
+	}
+</script>
+{/literal}
 
 {/rialtoExample}
