@@ -85,6 +85,7 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	}
 	
 	public function noAccessAction() {}
+	public function rialtoFormAction() {}
 	
 	
 	// FX

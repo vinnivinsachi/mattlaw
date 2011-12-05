@@ -2,7 +2,7 @@
 
 <div style='padding-left: 300px;'>
 	<div class='rDropdown rDropdownLeft'>
-		<div class='rialtoDropdownHeader'>
+		<div class='RialtoDropdown'>
 			<span class='rdActionsIcon'></span>
 			<span class='rdArrow'><span></span></span>
 		</div>

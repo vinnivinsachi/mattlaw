@@ -1,8 +1,8 @@
 {rialtoExample}
 <div class='align-center'>
 	
-	<img class='rialtoImageScrollSwitch inline-block' rialtoImageScrollSwitchAltID='rialtoImageScrollID-1' src='{$dirImages}/rialtoImageScrollSwitch/extra.jpg' />
-	<img class='rialtoImageScrollSwitch inline-block' rialtoImageScrollSwitchAltID='rialtoImageScrollID-2' src='{$dirImages}/rialtoImageScrollSwitch/extra.jpg' />
+	<div class='inline-block'><img class='rImageScrollSwitch' rialtoImageScrollSwitchParentSelecter='div' rialtoImageScrollSwitchAltID='rialtoImageScrollID-1' src='{$dirImages}/rialtoImageScrollSwitch/extra.jpg' /></div>
+	<div class='inline-block'><img class='rImageScrollSwitch' rialtoImageScrollSwitchParentSelecter='div' rialtoImageScrollSwitchAltID='rialtoImageScrollID-2' src='{$dirImages}/rialtoImageScrollSwitch/extra.jpg' /></div>
 
 </div>
 
@@ -24,7 +24,7 @@
 
 {literal}
 <style>
-	img.rialtoImageScrollSwitch {
+	img.rImageScrollSwitch {
 		width: 200px;
 		height: 200px;
 	}

@@ -1,6 +1,6 @@
 {rialtoExample}
 
-<a href='javascript:;' class='rialto' rialtoEndingCallback='call'>Call Something!</a>
+<a class='RialtoLink:nothing' href='javascript:;' rialtoClosureCB='call'>Call Something!</a>
 
 {literal}
 	<script type='text/javascript'>

@@ -17,7 +17,7 @@
        <nav id='nav-account'>
 			<ul>
 				<!-- <li><a href='javascript:;'><span class='icon icon-invite-friend'></span></a></li> <li class='nav-spacer nav-logged-out'> | </li> -->
-				<li class='nav-logged-out'><a class='rialtoPopup' href='{$siteRoot}/authentication/login'>Login / Join</a></li> <li class='nav-spacer nav-logged-out'> | </li>
+				<li class='nav-logged-out'><a class='RialtoPopup' href='{$siteRoot}/authentication/login'>Login / Join</a></li> <li class='nav-spacer nav-logged-out'> | </li>
 				<li class='nav-logged-in nav-user'><a href='{$siteRoot}/my-stores'>My Stores</a></li> <li class='nav-spacer nav-logged-in nav-user'> | </li>
 			   	<li class='nav-logged-in nav-user'><a href='{$siteRoot}/my-orders'>My Orders</a></li> <li class='nav-spacer nav-logged-in nav-user'> | </li>
 			   	<li class='nav-logged-in nav-user'><a href='{$siteRoot}/my-listings'>My Listings</a></li> <li class='nav-spacer nav-logged-in nav-user'> | </li>
@@ -33,7 +33,7 @@
 				</li class='nav-logged-in nav-user'> <li class='nav-spacer nav-logged-in nav-user'> | </li>
 				
 				<li id='quickcart'>
-					<span class='rialtoTooltip rTooltipRight'>
+					<span class='RialtoTooltip:hover rTooltipRight'>
 						<a href='{$siteRoot}/shopping-cart' class='rialtoLink'>
 							<span class='icon icon-cart' title='Quick cart, click to see your detailed shopping cart.'></span> Cart
 						</a>

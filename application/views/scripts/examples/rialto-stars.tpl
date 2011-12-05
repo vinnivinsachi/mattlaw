@@ -1,5 +1,5 @@
 {rialtoExample}
 
-<div id='stars' class='RialtoStars' rialtoStarsCurrentRating='3'></div>
+<span id='stars' class='rialtoStars' rialtoStarsCurrentRating='3'></span>
 
 {/rialtoExample}
