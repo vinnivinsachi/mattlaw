@@ -87,6 +87,15 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	public function noAccessAction() {}
 	public function rialtoFormAction() {}
 	public function rialtoScrollableAction() {}
+	public function rialtoGalleryAction() {
+		$images = array();
+		$dirPath = DOCUMENT_ROOT.DIR_IMAGES.'/rialtoGallery/';
+		$dirHandle = openDir($dirPath);
+		while($dirItem = readdir($dirHandle)) {
+			if(is_file($dirPath.$dirItem)) { array_push($images, DIR_IMAGES.'/rialtoGallery/'.$dirItem); }
+		}
+		$this->view->images = $images;
+	}
 	
 	
 	// FX

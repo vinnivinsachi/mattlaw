@@ -26,6 +26,7 @@
 		<li><a href='{$siteRoot}/examples/rialto-stars'>Stars</a></li>
 		<li><a href='{$siteRoot}/examples/rialto-form'>Form</a></li>
 		<li><a href='{$siteRoot}/examples/rialto-scrollable'>Scrollable</a></li>
+		<li><a href='{$siteRoot}/examples/rialto-gallery'>Gallery</a></li>
 	</ul>
 
 	<div class='spacer-medium'></div>
