@@ -1,0 +1,2 @@
+- update MySQL stuff in application/configs/local_settings.ini
+- update @siteRoot in public/stylesheets/less/variables.less

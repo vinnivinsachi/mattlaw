@@ -4,7 +4,8 @@
 <head>
 	<meta charset='utf-8' />
 	
-    {include file="$documentRoot/$siteRoot/js/header.html"}
+    {include file="$documentRoot$dirFoundation/header.tpl"}
+	<link rel='stylesheet' href='{$dirCSS}/main.css' type='text/css' media='screen, projection, print' />
     
 	<title>DR - HTML SPEC</title>
 </head>
