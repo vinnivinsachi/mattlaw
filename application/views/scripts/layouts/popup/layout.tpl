@@ -1,5 +1,5 @@
-	{$this->flashMessenger()}<!-- PHP FLASH MESSENGER -->
+{$this->flashMessenger()}<!-- PHP FLASH MESSENGER -->
 
-	<div id='popup-content'>
-		{$layout->content} <!-- PAGE CONTENT -->
-	</div>
+<div id='popup-content'>
+	{$layout->content} <!-- PAGE CONTENT -->
+</div>
