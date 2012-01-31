@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>public/foundation/js/header.tpl</string>
+	<string>public/stylesheets/less/main.less</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,43 +21,89 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>public/foundation/js/header.tpl</key>
+		<key>application/views/scripts/layouts/partials/_nav-main.tpl</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>21</integer>
+				<integer>54</integer>
 				<key>line</key>
-				<integer>20</integer>
+				<integer>6</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>5</integer>
+			<integer>0</integer>
 		</dict>
-		<key>public/foundation/js/header_old.tpl</key>
+		<key>public/foundation/stylesheets/less/base.less</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>27</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>90</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>67</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>20</integer>
+				<key>line</key>
+				<integer>90</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>27</integer>
+				<key>line</key>
+				<integer>90</integer>
+			</dict>
+		</dict>
+		<key>public/foundation/stylesheets/less/variables.less</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>38</integer>
+				<key>line</key>
+				<integer>10</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+		</dict>
+		<key>public/stylesheets/less/main.less</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>28</integer>
+				<key>line</key>
+				<integer>65</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>36</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>public/foundation/js/header.tpl</string>
-		<string>public/foundation/js/header_old.tpl</string>
+		<string>application/views/scripts/layouts/partials/_nav-main.tpl</string>
+		<string>public/stylesheets/less/main.less</string>
+		<string>public/foundation/stylesheets/less/base.less</string>
+		<string>public/foundation/stylesheets/less/variables.less</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{207, 0}, {1226, 878}}</string>
+	<string>{{208, -1}, {1226, 878}}</string>
 </dict>
 </plist>
