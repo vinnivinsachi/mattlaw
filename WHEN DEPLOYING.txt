@@ -1,2 +1,4 @@
 - update MySQL stuff in application/configs/local_settings.ini
+- create log file with write permission at logs/log.txt
+- create smarty temp folder with write permission at tmp/templates_c
 - update @siteRoot in public/stylesheets/less/variables.less
