@@ -666,7 +666,7 @@ label {
   font-weight: bold;
 }
 label.required {
-  background: url("/Sites/zend_basic/public/images/required.png") top right no-repeat;
+  background: url("/Sites/zend_basic/images/required.png") top right no-repeat;
 }
 textarea {
   display: inline-block;

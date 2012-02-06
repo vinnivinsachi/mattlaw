@@ -1,10 +1,11 @@
 @import '../../foundation/stylesheets/less/variables.less';
 
-
 // VARIABLE OVERRIDES
-	@dirFoundation: '/Sites/zend_basic/public/foundation';
-	@siteRoot: '/Sites/zend_basic/public';
-	@dirImages: '/Sites/zend_basic/public/images';
+	@import './local_variables.less'; // IMPORT LOCAL PATH VARIABLES
+	@dirFoundation: "@{siteRoot}/public/foundation";
+	@dirImages: "@{siteRoot}/public/images";
+	
+// VARIABLE OVERRIDES
 
 
 @import '../../foundation/stylesheets/less/mixins.less';
