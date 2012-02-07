@@ -1333,7 +1333,6 @@
   position: relative;
   min-width: 1080px;
   height: 100%;
-  background: #f8efee url("/Sites/zend_basic/public/rialtoPublicLibrary/images/bg.gif") repeat top center;
   color: #606060;
   font-size: 14px;
 }
@@ -1508,6 +1507,7 @@ body {
   width: 960px;
   margin: 0px auto;
   padding: 10px;
+  background: #f8efee url("/Sites/zend_basic/public/images/bg.gif") repeat top center;
 }
 /* ============================================= HEADER ====================================== */
 header {
