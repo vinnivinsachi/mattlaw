@@ -103,5 +103,9 @@ class ExamplesController extends Custom_Zend_Controller_Action
 	public function rialtoFxFadeInAction() {}
 	public function rialtoFxHighlightAction() {}
 	
+	
+	// CSS
+	public function cssDropdownAction() {}
+	
 }
 

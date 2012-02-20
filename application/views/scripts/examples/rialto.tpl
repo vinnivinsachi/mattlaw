@@ -37,4 +37,9 @@
 		<li><a href='{$siteRoot}/examples/rialto-fx-fade-in'>Fade In</a></li>
 		<li><a href='{$siteRoot}/examples/rialto-fx-highlight'>Highlight</a></li>
 	</ul>
+	
+	<h3>CSS</h3>
+	<ul>
+		<li><a href='{$siteRoot}/examples/css-dropdown'>Dropdown Menu</a></li>
+	</ul>
 </div>
