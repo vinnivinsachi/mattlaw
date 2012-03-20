@@ -142,6 +142,7 @@
 }
 .borderless {
   border: none !important;
+  background-color: none;
 }
 .border-left {
   border-left: 1px solid #cccccc;
@@ -506,6 +507,9 @@
 .icon-actions-inverted {
   background-position: -80px -96px;
 }
+.icon-messages {
+  background-position: -48px -80px;
+}
 /* tooltip status icon */
 .icon-status-order_placed {
   background-position: -96px 0px;
@@ -522,11 +526,17 @@
 .icon-status-order_returned {
   background-position: -112px -32px;
 }
+.icon-status-order_return_delivered {
+  background-position: -112px -96px;
+}
 .icon-status-order_returned_extended {
   background-position: -112px -32px;
 }
 .icon-status-order_completed {
   background-position: -96px -96px;
+}
+.icon-status-order_cancelled {
+  background-position: -96px -112px;
 }
 /* icon status */
 .icon-status-listed {
@@ -1971,11 +1981,13 @@ form input.validation-failed {
 *****/
 /* ============================================= GENERAL ====================================== */
 body {
+  background: #f8efee url("/Sites/zend_basic/public/images/bg.gif") repeat top center;
+}
+#wrapper {
   display: block;
   width: 960px;
   margin: 0px auto;
   padding: 10px;
-  background: #f8efee url("/Sites/zend_basic/public/images/bg.gif") repeat top center;
 }
 /* ============================================= HEADER ====================================== */
 header {
