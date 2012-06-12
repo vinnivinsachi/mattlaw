@@ -1,6 +1,6 @@
 <?php
 
-class AuthenticationController extends Custom_Zend_Controller_Action
+class AuthenticationController extends Application_Controller
 {
 
     public function init() {

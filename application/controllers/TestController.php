@@ -1,6 +1,6 @@
 <?php
 
-class TestController extends Custom_Zend_Controller_Action
+class TestController extends Application_Controller
 {
 
     public function indexAction() {

@@ -1,6 +1,6 @@
 <?php
 
-class RegistrationController extends Custom_Zend_Controller_Action
+class RegistrationController extends Application_Controller
 {
 	public function preDispatch() {
 		parent::preDispatch();

@@ -1,6 +1,6 @@
 <?php
 
-class ExamplesController extends Custom_Zend_Controller_Action
+class ExamplesController extends Application_Controller
 {
 
     public function init() {

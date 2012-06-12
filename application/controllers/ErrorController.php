@@ -1,6 +1,6 @@
 <?php
 
-class ErrorController extends Custom_Zend_Controller_Action
+class ErrorController extends Application_Controller
 {
 	
     public function errorAction() {
