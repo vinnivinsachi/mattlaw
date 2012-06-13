@@ -1,7 +1,7 @@
 <?php
 
-require_once APPLICATION_PATH.'/../library/Custom/Zend/Application/Bootstrap.php';
-class Bootstrap extends Custom_Zend_Application_Bootstrap
+require_once APPLICATION_PATH.'/../library/NovumWare/Zend/Application/Bootstrap.php';
+class Bootstrap extends NovumWare_Zend_Application_Bootstrap
 {
 	// set up routes for pretty urls
 	public function _initRoutes(){
