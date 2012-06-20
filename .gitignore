@@ -11,3 +11,5 @@ build
 build/
 build/*
 build/*/*
+public/stylesheets/less/local_variables.less
+public/stylesheets/css/styles.css

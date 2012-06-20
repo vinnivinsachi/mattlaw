@@ -3,3 +3,4 @@ TO DEPLOY:
 - create log file with write permission at logs/log.txt
 - create smarty temp folder with write permission at tmp/templates_c
 - copy file and update @siteRoot in public/stylesheets/less/local_variables.less
+- define $_sessionNamespace in the bootstrap
