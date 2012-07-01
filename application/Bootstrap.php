@@ -3,6 +3,9 @@
 require_once APPLICATION_PATH.'/../library/NovumWare/Zend/Application/Bootstrap.php';
 class Bootstrap extends NovumWare_Zend_Application_Bootstrap
 {
+    protected $_sessionNamespace = 'ZendBasic';
+    
+    
 	// set up routes for pretty urls
 	public function _initRoutes(){
 		$front = Zend_Controller_Front::getInstance();

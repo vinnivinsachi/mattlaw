@@ -62,7 +62,7 @@ class Zend_View_Helper_FlashMessenger extends Zend_View_Helper_Abstract
      * @param  string $template Format string for message output
      * @return string Flash messages formatted for output
      */
-    public function flashMessenger($key = 'notice',
+    public function flashMessenger($key = 'success',
                                    $template='<li>%s</li>')
     {
         $flashMessenger = $this->_getFlashMessenger();
@@ -107,6 +107,7 @@ class Zend_View_Helper_FlashMessenger extends Zend_View_Helper_Abstract
 	        	}
 	        	if($key == 'error') $errors .= sprintf($template, $message);
 	        	else if($key == 'warning') $warnings .= sprintf($template, $message);
+	        	else if($key == 'success') $successes .= sprintf($template, $message);
 	        	else $notices .= sprintf($template, $message);
 	        }
 	        
@@ -114,6 +115,7 @@ class Zend_View_Helper_FlashMessenger extends Zend_View_Helper_Abstract
 	        $output ='<div id="flash-messages">';
 	        if($notices != '') $output .= '<ul class="notice">'.$notices.'</ul>';
 	        if($warnings != '') $output .= '<ul class="warning">'.$warnings.'</ul>';
+	        if($successes != '') $output .= '<ul class="success">'.$successes.'</ul>';
 	        if($errors != '') $output .= '<ul class="error">'.$errors.'</ul>';
 	        $output .= '</div>';
 	
