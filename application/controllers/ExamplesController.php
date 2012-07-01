@@ -2,36 +2,42 @@
 
 class ExamplesController extends Application_Controller
 {
-
     public function init() {
-    	parent::init();  // Because this is a custom controller class
+    	parent::init();
 
 		$this->_ajaxContext->addActionContext('rialto-ajax', 'json')
 						   ->addActionContext('rialto-pagination-load', 'json')
 			 			   ->initContext();
-
-		// get a requested variable
-			$var = $this->_request->getParam('paramName');
     }
 
     public function indexAction() {}
 
-	public function jquerytoolstabsAction() {}
-	public function jquerytoolsformvalidatorAction() {}
-	
-	
-	
-	public function zendAction() {}
+    
+    // ------------------------------------------------------------------ Zend Stuff ----------------------------------------------------------------------
+    public function zendAction() {}
 	public function partialAction() {}
+	
 	public function partialEvalAction() {
-		$this->view->evaluatedPartial = $this->evalPartial('partials/example.tpl', array('example'=>'<div>GOGOGOGO</div>'));
+		$this->view->evaluatedPartial = $this->evalViewScript('partials/example.tpl', array('passedVar'=>'<div>This div was passed to the partial!</div>'));
 	}
+	
 	public function imageUploadAction() {
+	    throw new Exception('Needs to be implemented with new NovumWare Library');
 		if($this->_request->isPost()) {
 			$formName = 'uploadForm'; // the name of upload form
 			$processResult = Application_Process_Main::runProcess('Application_Process_Image::saveImagesFromForm', array($formName)); // process images from the form
 		}
 	}
+	
+	// TODO MARK: is this working?
+    public function noAccessAction() {
+        throw new Exception('Needs to be implemented');
+    }
+	
+	
+    // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
+    public function jquerytoolstabsAction() {}
+	public function jquerytoolsformvalidatorAction() {}
 
 	
 	public function rialtoAction() {}
@@ -84,7 +90,7 @@ class ExamplesController extends Application_Controller
 		$this->view->elmts = $elmts;
 	}
 	
-	public function noAccessAction() {}
+	
 	public function rialtoFormAction() {}
 	public function rialtoScrollableAction() {}
 	public function rialtoGalleryAction() {
