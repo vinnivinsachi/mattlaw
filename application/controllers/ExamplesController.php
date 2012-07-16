@@ -34,14 +34,17 @@ class ExamplesController extends Application_Controller
         throw new Exception('Needs to be implemented');
     }
 	
+    
+    // ------------------------------------------------------------------ NovumWare Public Library ----------------------------------------------------------------------
+    public function novumwareAction() {}
+    public function novumwareGetPluginAction() {}
+    
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
     public function jquerytoolstabsAction() {}
 	public function jquerytoolsformvalidatorAction() {}
 
 	
-	public function rialtoAction() {}
-	public function rialtoGetPluginAction() {}
 	public function rialtoCallbacksAction() {}
 	public function rialtoClickOnLoadAction() {}
 	public function rialtoDatePickerAction() {}
