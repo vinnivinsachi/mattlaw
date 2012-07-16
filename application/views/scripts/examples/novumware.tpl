@@ -1,8 +1,7 @@
-<div style='padding-left:50px;'>
-	<h3>NovumWare Public Library</h3>
-	<ul>
-		<li><a href='{$siteRoot}/examples/novumware-get-plugin'>How To Get A Plugin</a></li>
-<!--		<li><a href='{$siteRoot}/examples/rialto-callbacks'>Callbacks</a></li>-->
+<h3>NovumWare Public Library</h3>
+<ul>
+	<li><a href='{$siteRoot}/examples/nw-get-plugin'>How To Get A Plugin</a></li>
+	<li><a href='{$siteRoot}/examples/nw-callbacks'>Callbacks</a></li>
 <!--		<li><a href='{$siteRoot}/examples/rialto-click-on-load'>Click On Load</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-date-picker'>Date Picker</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-delete'>Delete</a></li>-->
@@ -27,19 +26,20 @@
 <!--		<li><a href='{$siteRoot}/examples/rialto-form'>Form</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-scrollable'>Scrollable</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-gallery'>Gallery</a></li>-->
-	</ul>
+</ul>
 
-	<div class='spacer-medium'></div>
+<div class='spacer-large'></div>
 
-	<h3>Fx</h3>
-	<ul>
+<h3>Fx</h3>
+<ul>
 <!--		<li><a href='{$siteRoot}/examples/rialto-fx-fade-out'>Fade Out</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-fx-fade-in'>Fade In</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-fx-highlight'>Highlight</a></li>-->
-	</ul>
-	
-	<h3>CSS</h3>
-	<ul>
+</ul>
+
+<div class='spacer-large'></div>
+
+<h3>CSS</h3>
+<ul>
 <!--		<li><a href='{$siteRoot}/examples/css-dropdown'>Dropdown Menu</a></li>-->
-	</ul>
-</div>
+</ul>
