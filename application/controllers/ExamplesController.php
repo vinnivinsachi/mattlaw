@@ -40,6 +40,7 @@ class ExamplesController extends Application_Controller
     public function nwGetPluginAction() {}
     public function nwCallbacksAction() {}
     public function nwClickOnLoadAction() {}
+    public function nwDatePickerAction() {}
     
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
@@ -47,7 +48,6 @@ class ExamplesController extends Application_Controller
 	public function jquerytoolsformvalidatorAction() {}
 
 	
-	public function rialtoDatePickerAction() {}
 	public function rialtoDeleteAction() {}
 	public function rialtoDialogAction() {}
 	public function rialtoFlashMessageAction() {}

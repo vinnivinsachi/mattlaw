@@ -3,7 +3,7 @@
 	<li><a href='{$siteRoot}/examples/nw-get-plugin'>How To Get A Plugin</a></li>
 	<li><a href='{$siteRoot}/examples/nw-callbacks'>Callbacks</a></li>
 	<li><a href='{$siteRoot}/examples/nw-click-on-load'>Click On Load</a></li>
-<!--		<li><a href='{$siteRoot}/examples/rialto-date-picker'>Date Picker</a></li>-->
+	<li><a href='{$siteRoot}/examples/nw-date-picker'>Date Picker</a></li>
 <!--		<li><a href='{$siteRoot}/examples/rialto-delete'>Delete</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-dialog'>Dialog</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-flash-message'>Flash Message</a></li>-->
