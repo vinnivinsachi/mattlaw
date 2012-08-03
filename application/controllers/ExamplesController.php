@@ -38,6 +38,7 @@ class ExamplesController extends Application_Controller
     // ------------------------------------------------------------------ NovumWare Public Library ----------------------------------------------------------------------
     public function novumwareAction() {}
     public function nwGetPluginAction() {}
+    public function nwFlashMessageAction() {}
     public function nwCallbacksAction() {}
     public function nwClickOnLoadAction() {}
     public function nwDatePickerAction() {}
@@ -49,8 +50,7 @@ class ExamplesController extends Application_Controller
     public function jquerytoolstabsAction() {}
 	public function jquerytoolsformvalidatorAction() {}
 
-
-	public function rialtoFlashMessageAction() {}
+	
 	public function rialtoImageBookAction() {}
 	public function rialtoLoadingImageAction() {}
 	public function rialtoLoadReplacesAction() {}
