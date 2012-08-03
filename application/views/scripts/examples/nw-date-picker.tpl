@@ -1,5 +1,5 @@
 {nwExample}
 
-	Date: <input type='text' class='nwDatePicker' />
+	Date: <input type='text' class='nw-datePicker' />
 
 {/nwExample}
