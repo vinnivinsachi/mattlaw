@@ -41,14 +41,14 @@ class ExamplesController extends Application_Controller
     public function nwCallbacksAction() {}
     public function nwClickOnLoadAction() {}
     public function nwDatePickerAction() {}
+    public function nwDeleteAction() {}
     
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
     public function jquerytoolstabsAction() {}
 	public function jquerytoolsformvalidatorAction() {}
 
-	
-	public function rialtoDeleteAction() {}
+
 	public function rialtoDialogAction() {}
 	public function rialtoFlashMessageAction() {}
 	public function rialtoImageBookAction() {}
