@@ -44,6 +44,7 @@ class ExamplesController extends Application_Controller
     public function nwDatePickerAction() {}
     public function nwDeleteAction() {}
     public function nwDialogAction() {}
+    public function nwImageBookAction() {}
     
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
@@ -51,7 +52,6 @@ class ExamplesController extends Application_Controller
 	public function jquerytoolsformvalidatorAction() {}
 
 	
-	public function rialtoImageBookAction() {}
 	public function rialtoLoadingImageAction() {}
 	public function rialtoLoadReplacesAction() {}
 	public function rialtoPopupAction() {}
