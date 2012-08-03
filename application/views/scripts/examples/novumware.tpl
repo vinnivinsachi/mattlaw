@@ -5,7 +5,7 @@
 	<li><a href='{$siteRoot}/examples/nw-click-on-load'>Click On Load</a></li>
 	<li><a href='{$siteRoot}/examples/nw-date-picker'>Date Picker</a></li>
 	<li><a href='{$siteRoot}/examples/nw-delete'>Delete</a></li>
-<!--		<li><a href='{$siteRoot}/examples/rialto-dialog'>Dialog</a></li>-->
+	<li><a href='{$siteRoot}/examples/nw-dialog'>Dialog</a></li>
 <!--		<li><a href='{$siteRoot}/examples/rialto-flash-message'>Flash Message</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-image-book'>Image Book</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-loading-image'>Loading Image</a></li>-->
