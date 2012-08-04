@@ -1,13 +1,13 @@
-{rialtoExample}
+{nwExample}
 
 <div style='padding-top:10px; padding-left:50px'>
-	<span class='RialtoTooltip:click'>
+	<span class='NWTooltip:click' data-nwTooltip-url='{$siteRoot}/partials/index'>
 		<a><span class='icon icon-shipment'></span> Shipped </a>
-		<div class='rTooltipContent' style='width: 350px;'>
-			<div class='rTooltipTriggerOverlay'>
+		<div class='nw-tooltip-content' style='width: 350px;'>
+			<div class='nw-tooltip-triggerOverlay'>
 				<span class='icon icon-shipment'></span> Shipped 
 			</div>
-			<div class='rTooltipBody'>
+			<div class='nw-tooltip-body'>
 				<table>
 					<thead>
 						<tr>
@@ -26,4 +26,4 @@
 	</span>
 </div>
 
-{/rialtoExample}
+{/nwExample}

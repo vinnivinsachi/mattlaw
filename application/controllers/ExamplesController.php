@@ -45,7 +45,7 @@ class ExamplesController extends Application_Controller
     public function nwDeleteAction() {}
     public function nwDialogAction() {}
     public function nwImageBookAction() {}
-    
+    public function nwTooltipAction() {}
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
     public function jquerytoolstabsAction() {}
@@ -57,7 +57,6 @@ class ExamplesController extends Application_Controller
 	public function rialtoPopupAction() {}
 	public function rialtoScrollAction() {}
 	public function rialtoTabsAction() {}
-	public function rialtoTooltipAction() {}
 	public function rialtoEndingCallbackAction() {}
 	public function rialtoRolloverImageAction() {}
 	public function rialtoPaletteAction() {}
