@@ -1,7 +1,7 @@
 {nwExample}
 
 <div style='padding-top:10px; padding-left:50px'>
-	<span class='NWTooltip:click' data-nwTooltip-url='{$siteRoot}/partials/index'>
+	<span class='NWTooltip:click' data-nwTooltip-url='{$siteRoot}/partials/example'>
 		<a><span class='icon icon-shipment'></span> Shipped </a>
 		<div class='nw-tooltip-content' style='width: 350px;'>
 			<div class='nw-tooltip-triggerOverlay'>

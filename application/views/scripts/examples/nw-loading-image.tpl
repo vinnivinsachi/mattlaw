@@ -1,4 +1,4 @@
-{rialtoExample}
+{nwExample}
 
 <div id='loadingImageParent' style='height:200px;'></div>
 
@@ -6,23 +6,19 @@
 &nbsp;&nbsp;&nbsp;
 <button onclick='hideLoading()'>Hide the loading image</button>
 
-{literal}
-<script type='text/javascript'>	
+{literal}<script type='text/javascript'>	
 	window.addEvent('domready', function(){
-
-		rialtoLoadingImage = $Rialto.getPlugin('RialtoLoadingImage');
+		nwLoadingImage = $NW.getPlugin('NWLoadingImage');
 		parent = $('loadingImageParent');
-		
 	});
 	
 	function showLoading() {
-		rialtoLoadingImage.show(parent);
+		nwLoadingImage.show(parent);
 	}
 	
 	function hideLoading() {
-		rialtoLoadingImage.hide(parent);
+		nwLoadingImage.hide(parent);
 	}
-</script>
-{/literal}
+</script>{/literal}
 
-{/rialtoExample}
+{/nwExample}

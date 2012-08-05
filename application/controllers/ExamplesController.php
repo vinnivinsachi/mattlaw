@@ -38,6 +38,7 @@ class ExamplesController extends Application_Controller
     // ------------------------------------------------------------------ NovumWare Public Library ----------------------------------------------------------------------
     public function novumwareAction() {}
     public function nwGetPluginAction() {}
+    public function nwLoadingImageAction() {}
     public function nwFlashMessageAction() {}
     public function nwCallbacksAction() {}
     public function nwClickOnLoadAction() {}
@@ -46,13 +47,14 @@ class ExamplesController extends Application_Controller
     public function nwDialogAction() {}
     public function nwImageBookAction() {}
     public function nwTooltipAction() {}
+    public function nwAjaxAction() {
+		$this->view->success = true;
+	}
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
     public function jquerytoolstabsAction() {}
 	public function jquerytoolsformvalidatorAction() {}
 
-	
-	public function rialtoLoadingImageAction() {}
 	public function rialtoLoadReplacesAction() {}
 	public function rialtoPopupAction() {}
 	public function rialtoScrollAction() {}
@@ -63,10 +65,6 @@ class ExamplesController extends Application_Controller
 	public function rialtoTableAccordionAction() {}
 	public function rialtoDropdownAction() {}
 	public function rialtoStarsAction() {}
-	
-	public function rialtoAjaxAction() {
-		$this->view->success = true;
-	}
 	
 	public function rialtoImageScrollSwitchAction() {
 	}

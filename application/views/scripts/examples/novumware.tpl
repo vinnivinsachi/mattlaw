@@ -1,14 +1,15 @@
 <h3>NovumWare Public Library</h3>
 <ul>
 	<li><a href='{$siteRoot}/examples/nw-get-plugin'>How To Get A Plugin</a></li>
+	<li><a href='{$siteRoot}/examples/nw-loading-image'>Loading Image</a></li>
 	<li><a href='{$siteRoot}/examples/nw-flash-message'>Flash Message</a></li>
 	<li><a href='{$siteRoot}/examples/nw-callbacks'>Callbacks</a></li>
+	<li><a href='{$siteRoot}/examples/nw-ajax'>Ajax</a></li>
 	<li><a href='{$siteRoot}/examples/nw-click-on-load'>Click On Load</a></li>
 	<li><a href='{$siteRoot}/examples/nw-date-picker'>Date Picker</a></li>
 	<li><a href='{$siteRoot}/examples/nw-delete'>Delete</a></li>
 	<li><a href='{$siteRoot}/examples/nw-dialog'>Dialog</a></li>
 	<li><a href='{$siteRoot}/examples/nw-image-book'>Image Book</a></li>
-<!--		<li><a href='{$siteRoot}/examples/rialto-loading-image'>Loading Image</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-load-replaces'>Load Replaces</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-popup'>Popup</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-scroll'>Scroll</a></li>-->
@@ -16,7 +17,6 @@
 	<li><a href='{$siteRoot}/examples/nw-tooltip'>Tooltip</a></li>	
 <!--		<li><a href='{$siteRoot}/examples/rialto-ending-callback'>Ending Callback</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-rollover-image'>Rollover Image</a></li>-->
-<!--		<li><a href='{$siteRoot}/examples/rialto-ajax'>Ajax</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-image-scroll-switch'>Image Scroll Switch</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-pagination'>Pagination</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-palette'>Palette</a></li>-->
