@@ -39,6 +39,10 @@ class ExamplesController extends Application_Controller
     public function novumwareAction() {}
     public function nwGetPluginAction() {}
     public function nwLoadingImageAction() {}
+    public function nwAjaxAction() {
+		$this->view->success = true;
+	}
+    public function nwLoadReplacesAction() {}
     public function nwFlashMessageAction() {}
     public function nwCallbacksAction() {}
     public function nwClickOnLoadAction() {}
@@ -47,15 +51,12 @@ class ExamplesController extends Application_Controller
     public function nwDialogAction() {}
     public function nwImageBookAction() {}
     public function nwTooltipAction() {}
-    public function nwAjaxAction() {
-		$this->view->success = true;
-	}
+    
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
     public function jquerytoolstabsAction() {}
 	public function jquerytoolsformvalidatorAction() {}
-
-	public function rialtoLoadReplacesAction() {}
+	
 	public function rialtoPopupAction() {}
 	public function rialtoScrollAction() {}
 	public function rialtoTabsAction() {}

@@ -1,16 +1,16 @@
 <h3>NovumWare Public Library</h3>
 <ul>
 	<li><a href='{$siteRoot}/examples/nw-get-plugin'>How To Get A Plugin</a></li>
-	<li><a href='{$siteRoot}/examples/nw-loading-image'>Loading Image</a></li>
-	<li><a href='{$siteRoot}/examples/nw-flash-message'>Flash Message</a></li>
 	<li><a href='{$siteRoot}/examples/nw-callbacks'>Callbacks</a></li>
+	<li><a href='{$siteRoot}/examples/nw-loading-image'>Loading Image</a></li>
 	<li><a href='{$siteRoot}/examples/nw-ajax'>Ajax</a></li>
+	<li><a href='{$siteRoot}/examples/nw-load-replaces'>Load Replaces</a></li>
+	<li><a href='{$siteRoot}/examples/nw-flash-message'>Flash Message</a></li>
 	<li><a href='{$siteRoot}/examples/nw-click-on-load'>Click On Load</a></li>
 	<li><a href='{$siteRoot}/examples/nw-date-picker'>Date Picker</a></li>
 	<li><a href='{$siteRoot}/examples/nw-delete'>Delete</a></li>
 	<li><a href='{$siteRoot}/examples/nw-dialog'>Dialog</a></li>
 	<li><a href='{$siteRoot}/examples/nw-image-book'>Image Book</a></li>
-<!--		<li><a href='{$siteRoot}/examples/rialto-load-replaces'>Load Replaces</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-popup'>Popup</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-scroll'>Scroll</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-tabs'>Tabs</a></li>	-->
