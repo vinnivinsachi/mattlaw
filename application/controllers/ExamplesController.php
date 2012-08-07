@@ -51,6 +51,7 @@ class ExamplesController extends Application_Controller
     public function nwDialogAction() {}
     public function nwImageBookAction() {}
     public function nwTooltipAction() {}
+    public function nwHintAction() {}
     
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
