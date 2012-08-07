@@ -52,6 +52,7 @@ class ExamplesController extends Application_Controller
     public function nwImageBookAction() {}
     public function nwTooltipAction() {}
     public function nwHintAction() {}
+    public function nwTourAction() {}
     
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
