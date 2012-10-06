@@ -45,6 +45,7 @@ class ExamplesController extends Application_Controller
     public function nwLoadReplacesAction() {}
     public function nwFlashMessageAction() {}
     public function nwCallbacksAction() {}
+    public function nwBubbleAction() {}
     public function nwClickOnLoadAction() {}
     public function nwDatePickerAction() {}
     public function nwDeleteAction() {}

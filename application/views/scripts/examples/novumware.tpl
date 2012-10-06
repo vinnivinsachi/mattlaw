@@ -2,6 +2,7 @@
 <ul>
 	<li><a href='{$siteRoot}/examples/nw-get-plugin'>How To Get A Plugin</a></li>
 	<li><a href='{$siteRoot}/examples/nw-callbacks'>Callbacks</a></li>
+	<li><a href='{$siteRoot}/examples/nw-bubble'>Bubble</a></li>
 	<li><a href='{$siteRoot}/examples/nw-loading-image'>Loading Image</a></li>
 	<li><a href='{$siteRoot}/examples/nw-ajax'>Ajax</a></li>
 	<li><a href='{$siteRoot}/examples/nw-load-replaces'>Load Replaces</a></li>
