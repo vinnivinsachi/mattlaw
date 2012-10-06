@@ -19,13 +19,14 @@
 	<li><a href='{$siteRoot}/examples/nw-tabs'>Tabs</a></li>
 	<li><a href='{$siteRoot}/examples/nw-scroll'>Scroll</a></li>
 	<li><a href='{$siteRoot}/examples/nw-rollover-image'>Rollover Image</a></li>
+	<li><a href='{$siteRoot}/examples/nw-form'>Form</a></li>
+	
 <!--		<li><a href='{$siteRoot}/examples/rialto-image-scroll-switch'>Image Scroll Switch</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-pagination'>Pagination</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-palette'>Palette</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-table-accordion'>Table Accordion</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-dropdown'>Dropdown</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-stars'>Stars</a></li>-->
-<!--		<li><a href='{$siteRoot}/examples/rialto-form'>Form</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-scrollable'>Scrollable</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-gallery'>Gallery</a></li>-->
 </ul>

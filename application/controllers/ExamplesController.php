@@ -58,6 +58,7 @@ class ExamplesController extends Application_Controller
     public function nwTabsAction() {}
     public function nwScrollAction() {}
     public function nwRolloverImageAction() {}
+    public function nwFormAction() {}
 
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
@@ -94,8 +95,6 @@ class ExamplesController extends Application_Controller
 		$this->view->elmts = $elmts;
 	}
 	
-	
-	public function rialtoFormAction() {}
 	public function rialtoScrollableAction() {}
 	public function rialtoGalleryAction() {
 		$images = array();
