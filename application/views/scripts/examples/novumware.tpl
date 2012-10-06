@@ -18,8 +18,7 @@
 	<li><a href='{$siteRoot}/examples/nw-popup'>Popup</a></li>
 	<li><a href='{$siteRoot}/examples/nw-tabs'>Tabs</a></li>
 	<li><a href='{$siteRoot}/examples/nw-scroll'>Scroll</a></li>
-<!--		<li><a href='{$siteRoot}/examples/rialto-ending-callback'>Ending Callback</a></li>-->
-<!--		<li><a href='{$siteRoot}/examples/rialto-rollover-image'>Rollover Image</a></li>-->
+	<li><a href='{$siteRoot}/examples/nw-rollover-image'>Rollover Image</a></li>
 <!--		<li><a href='{$siteRoot}/examples/rialto-image-scroll-switch'>Image Scroll Switch</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-pagination'>Pagination</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-palette'>Palette</a></li>-->

@@ -57,15 +57,14 @@ class ExamplesController extends Application_Controller
     public function nwPopupAction() {}
     public function nwTabsAction() {}
     public function nwScrollAction() {}
+    public function nwRolloverImageAction() {}
 
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
     public function jquerytoolstabsAction() {}
 	public function jquerytoolsformvalidatorAction() {}
 	
-	
 	public function rialtoEndingCallbackAction() {}
-	public function rialtoRolloverImageAction() {}
 	public function rialtoPaletteAction() {}
 	public function rialtoTableAccordionAction() {}
 	public function rialtoDropdownAction() {}
