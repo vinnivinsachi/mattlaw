@@ -11,12 +11,12 @@
 	<li><a href='{$siteRoot}/examples/nw-delete'>Delete</a></li>
 	<li><a href='{$siteRoot}/examples/nw-dialog'>Dialog</a></li>
 	<li><a href='{$siteRoot}/examples/nw-image-book'>Image Book</a></li>
-<!--		<li><a href='{$siteRoot}/examples/rialto-scroll'>Scroll</a></li>-->
-<!--		<li><a href='{$siteRoot}/examples/rialto-tabs'>Tabs</a></li>	-->
+<!--		<li><a href='{$siteRoot}/examples/rialto-scroll'>Scroll</a></li>-->	
 	<li><a href='{$siteRoot}/examples/nw-tooltip'>Tooltip</a></li>
 	<li><a href='{$siteRoot}/examples/nw-hint'>Hint</a></li>
 	<li><a href='{$siteRoot}/examples/nw-tour'>Tour</a></li>
 	<li><a href='{$siteRoot}/examples/nw-popup'>Popup</a></li>
+	<li><a href='{$siteRoot}/examples/nw-tabs'>Tabs</a></li>
 <!--		<li><a href='{$siteRoot}/examples/rialto-ending-callback'>Ending Callback</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-rollover-image'>Rollover Image</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-image-scroll-switch'>Image Scroll Switch</a></li>-->
