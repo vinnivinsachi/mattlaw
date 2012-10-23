@@ -5,9 +5,8 @@ class ExamplesController extends Application_Controller
     public function init() {
     	parent::init();
 
-		$this->_ajaxContext->addActionContext('rialto-ajax', 'json')
-						   ->addActionContext('rialto-pagination-load', 'json')
-			 			   ->initContext();
+		$this->_ajaxContext->addActionContext('image-upload', 'json')
+		                   ->initContext();
     }
 
     public function indexAction() {}
@@ -22,11 +21,11 @@ class ExamplesController extends Application_Controller
 	}
 	
 	public function imageUploadAction() {
-	    throw new Exception('Needs to be implemented with new NovumWare Library');
-		if($this->_request->isPost()) {
-			$formName = 'uploadForm'; // the name of upload form
-			$processResult = Application_Process_Main::runProcess('Application_Process_Image::saveImagesFromForm', array($formName)); // process images from the form
-		}
+	    var_dump($_FILES);
+//		if ($this->_request->isPost()) {
+//			$formName = 'uploadForm'; // the name of upload form
+//			$processResult = Application_Process_Main::runProcess('Application_Process_Image::saveImagesFromForm', array($formName)); // process images from the form
+//		}
 	}
 	
 	// TODO MARK: is this working?
