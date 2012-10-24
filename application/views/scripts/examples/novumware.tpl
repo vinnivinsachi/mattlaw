@@ -20,6 +20,7 @@
 	<li><a href='{$siteRoot}/examples/nw-scroll'>Scroll</a></li>
 	<li><a href='{$siteRoot}/examples/nw-rollover-image'>Rollover Image</a></li>
 	<li><a href='{$siteRoot}/examples/nw-form'>Form</a></li>
+	<li><a href='{$siteRoot}/examples/nw-upload'>Upload</a></li>
 	
 <!--		<li><a href='{$siteRoot}/examples/rialto-image-scroll-switch'>Image Scroll Switch</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-pagination'>Pagination</a></li>-->

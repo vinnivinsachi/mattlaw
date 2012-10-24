@@ -21,11 +21,12 @@ class ExamplesController extends Application_Controller
 	}
 	
 	public function imageUploadAction() {
-	    var_dump($_FILES);
-//		if ($this->_request->isPost()) {
+		if ($_FILES) {
+		    Application_Process_Uploads::uploadAndThumbImages();
+//		    NovumWare_Process_Uploads_Images::uploadImagesToDir(SITE_ROOT.'/public/uploads');
 //			$formName = 'uploadForm'; // the name of upload form
 //			$processResult = Application_Process_Main::runProcess('Application_Process_Image::saveImagesFromForm', array($formName)); // process images from the form
-//		}
+		}
 	}
 	
 	// TODO MARK: is this working?
@@ -58,6 +59,7 @@ class ExamplesController extends Application_Controller
     public function nwScrollAction() {}
     public function nwRolloverImageAction() {}
     public function nwFormAction() {}
+    public function nwUploadAction() {}
 
 	
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
