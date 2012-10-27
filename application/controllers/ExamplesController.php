@@ -21,8 +21,8 @@ class ExamplesController extends Application_Controller
 	}
 	
 	public function imageUploadAction() {
-		if ($_FILES) {
-		    Application_Process_Uploads::uploadAndThumbImages();
+	    if ($_FILES) {
+		    Application_Process_Uploads::runMethodInTransaction('uploadAndThumbImages');
 //		    NovumWare_Process_Uploads_Images::uploadImagesToDir(SITE_ROOT.'/public/uploads');
 //			$formName = 'uploadForm'; // the name of upload form
 //			$processResult = Application_Process_Main::runProcess('Application_Process_Image::saveImagesFromForm', array($formName)); // process images from the form

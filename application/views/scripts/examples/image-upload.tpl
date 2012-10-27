@@ -1,7 +1,7 @@
-<form class='' action='{$siteRoot}/examples/image-upload' enctype="multipart/form-data" method='POST'>
+<form class='NWUpload' action='{$siteRoot}/examples/image-upload'>
 	<div>
 		<label>Files: </label>
-		<input class='nwUpload-input' type='file' name='file' />
+		<input class='nwUpload-input' type='file' data-nwUpload-allowedTypes='image/jpg image/jpeg image/png' />
 	</div>
 	<div>
 		<input type='submit' value='Upload!' />

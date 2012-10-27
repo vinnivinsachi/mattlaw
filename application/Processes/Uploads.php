@@ -22,4 +22,5 @@ class Application_Process_Uploads extends NovumWare_Process_Abstract
 	static public function createThumbsForImage($image) {
 	    NovumWare_Process_Uploads_Images::createThumbs($image, Application_Constants_Uploads::getAllThumbsArray());
 	}
+	
 }
