@@ -11,30 +11,30 @@ class ExamplesController extends Application_Controller
 
     public function indexAction() {}
 
-    
+
     // ------------------------------------------------------------------ Zend Stuff ----------------------------------------------------------------------
     public function zendAction() {}
-	public function partialAction() {}
-	
-	public function partialEvalAction() {
-		$this->view->evaluatedPartial = $this->evalViewScript('partials/example.tpl', array('passedVar'=>'<div>This div was passed to the partial!</div>'));
-	}
-	
-	public function imageUploadAction() {
-	    if ($_FILES) {
-		    Application_Process_Uploads::runMethodInTransaction('uploadAndThumbImages');
+    public function partialAction() {}
+
+    public function partialEvalAction() {
+	    $this->view->evaluatedPartial = $this->evalViewScript('partials/example.tpl', array('passedVar'=>'<div>This div was passed to the partial!</div>'));
+    }
+
+    public function imageUploadAction() {
+	if ($_FILES) {
+		Application_Process_Uploads::runMethodInTransaction('uploadAndThumbImages');
 //		    NovumWare_Process_Uploads_Images::uploadImagesToDir(SITE_ROOT.'/public/uploads');
 //			$formName = 'uploadForm'; // the name of upload form
 //			$processResult = Application_Process_Main::runProcess('Application_Process_Image::saveImagesFromForm', array($formName)); // process images from the form
-		}
-	}
-	
+	    }
+    }
+
 	// TODO MARK: is this working?
     public function noAccessAction() {
         throw new Exception('Needs to be implemented');
     }
-	
-    
+
+
     // ------------------------------------------------------------------ NovumWare Public Library ----------------------------------------------------------------------
     public function novumwareAction() {}
     public function nwGetPluginAction() {}
@@ -61,20 +61,20 @@ class ExamplesController extends Application_Controller
     public function nwFormAction() {}
     public function nwUploadAction() {}
 
-	
+
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
     public function jquerytoolstabsAction() {}
 	public function jquerytoolsformvalidatorAction() {}
-	
+
 	public function rialtoEndingCallbackAction() {}
 	public function rialtoPaletteAction() {}
 	public function rialtoTableAccordionAction() {}
 	public function rialtoDropdownAction() {}
 	public function rialtoStarsAction() {}
-	
+
 	public function rialtoImageScrollSwitchAction() {
 	}
-	
+
 	public function rialtoPaginationAction() {
 		$this->rialtoPaginationLoad(10, 1);
 		$this->rialtoPaginationLoad(10, 3);
@@ -95,7 +95,7 @@ class ExamplesController extends Application_Controller
 		}
 		$this->view->elmts = $elmts;
 	}
-	
+
 	public function rialtoScrollableAction() {}
 	public function rialtoGalleryAction() {
 		$images = array();
@@ -106,16 +106,16 @@ class ExamplesController extends Application_Controller
 		}
 		$this->view->images = $images;
 	}
-	
-	
+
+
 	// FX
 	public function rialtoFxFadeOutAction() {}
 	public function rialtoFxFadeInAction() {}
 	public function rialtoFxHighlightAction() {}
-	
-	
+
+
 	// CSS
 	public function cssDropdownAction() {}
-	
+
 }
 
