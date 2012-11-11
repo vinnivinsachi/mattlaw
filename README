@@ -1,12 +1,22 @@
 TO DEPLOY:
 - clone submodules (library | public/nwPublicLibrary)
-	Run these commands from your project root directory:
+	run these commands from your project root directory:
 		rm -r public/nwPublicLibrary
-		git submodule add https://github.com/NovumWare/NovumWarePublicLibrary.git public/nwPublicLibrary
+		git clone git@github.com:NovumWare/NovumWarePublicLibrary.git public/nwPublicLibrary
 		rm -r library
-		git submodule add https://github.com/NovumWare/Zend_Library.git library
-- update MySQL stuff in application/configs/local_settings.ini
+		git clone git@github.com:NovumWare/Zend_Library.git library
+- create MySQL DB and update Database Setup in application/configs/local_settings.ini
 - create log file with write permission at logs/log.txt
-- create smarty temp folder with write permission at tmp/templates_c
-- copy file and update @siteRoot in public/stylesheets/less/local_variables.less
+	run these commands from the project root directory:
+		mkdir logs
+		chmod -R 777 logs
+		touch logs/log.txt
+- create Smarty temp folder with write permission at tmp/templates_c
+	run these commands from the project root directory:
+		mkdir tmp
+		mkdir tmp/templates_c
+		chmod -R 777 tmp/templates_c
+- copy file and update @siteRoot in the newly copied file
+	run these commands from the project root directory
+		cp SETUP/local_variables.less public/stylesheets/less/local_variables.less
 - define $_sessionNamespace in the bootstrap
