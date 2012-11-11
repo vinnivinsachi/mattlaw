@@ -6,9 +6,9 @@ TO DEPLOY:
 		rm -r library
 		git clone git@github.com:NovumWare/Zend_Library.git library
 2) create MySQL DB for the project
-3) copy file and update DB settings in the newly copied file (application/config/local_settings.ini)
+3) copy file and update DB settings in the newly copied file (application/configs/local_settings.ini)
 	run these commands from the project root directory
-		cp SETUP/local_settings.ini application/config/local_settings.ini
+		cp SETUP/local_settings.ini application/configs/local_settings.ini
 4) create log file with write permission at logs/log.txt
 	run these commands from the project root directory:
 		mkdir logs
