@@ -27,3 +27,11 @@ TO DEPLOY:
 	run the following commands from the project root directory
 		mkdir public/stylesheets/css
 9) add your project folder to LESS (the program), uncheck everything except for public/stylesheets/less/styles.less, compile the less
+10) add your project to Github.com
+	run the following commands from the project root directory
+		git remote rm origin
+		git remote add origin [ssh to your project on Github]
+		git config master.remote origin
+		git config master.merge refs/heads/master
+		git pull origin master
+		git push
