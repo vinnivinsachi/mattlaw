@@ -23,3 +23,7 @@ TO DEPLOY:
 	run these commands from the project root directory
 		cp SETUP/local_variables.less public/stylesheets/less/local_variables.less
 7) define $_sessionNamespace in the file: application/Bootstrap.php
+8) create a css folder
+	run the following commands from the project root directory
+		mkdir public/stylesheets/css
+9) add your project folder to LESS (the program), uncheck everything except for public/stylesheets/less/styles.less, compile the less
