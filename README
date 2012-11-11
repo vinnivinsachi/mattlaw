@@ -1,10 +1,10 @@
 TO DEPLOY:
-- clone submodules (library | public/rialtoPublicLibrary)
+- clone submodules (library | public/nwPublicLibrary)
 	Run these commands from your project root directory:
-		rm -r public/rialtoPublicLibrary
-		git submodule add https://github.com/NovumWare/Rialto_Public_Library.git public/rialtoPublicLibrary
-		rm -r library/NovumWarePublicLibrary
-		git submodule add https://github.com/NovumWare/NovumWarePublicLibrary.git library/NovumWarePublicLibrary
+		rm -r public/nwPublicLibrary
+		git submodule add https://github.com/NovumWare/NovumWarePublicLibrary.git public/nwPublicLibrary
+		rm -r library
+		git submodule add https://github.com/NovumWare/Zend_Library.git library
 - update MySQL stuff in application/configs/local_settings.ini
 - create log file with write permission at logs/log.txt
 - create smarty temp folder with write permission at tmp/templates_c
