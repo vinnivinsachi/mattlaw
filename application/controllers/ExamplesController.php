@@ -60,7 +60,7 @@ class ExamplesController extends Application_Controller
     public function nwRolloverImageAction() {}
     public function nwFormAction() {}
     public function nwUploadAction() {}
-
+	public function nwGalleryAction() {}
 
     // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
     public function jquerytoolstabsAction() {}

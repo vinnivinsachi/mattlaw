@@ -1,5 +1,7 @@
 @import '../../nwPublicLibrary/stylesheets/less/main.less'; // RIALTO PUBLIC LIBRARY STYLES
 
+/* TODO fix styleing for email and tel type inputs */
+
 /***** Attributes Order
 ** postition / float
 ** width / height
@@ -35,7 +37,7 @@ nav.nav-main {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	display: block;
 	padding: 0px;
-	
+
 	ul {
 		visibility: hidden;
 		opacity: 0;
@@ -51,7 +53,7 @@ nav.nav-main {
 		.rounded-corners(0px, 4px, 4px, 4px);
 		.box-shadow(1px, 1px, 1px);
 		.transition();
-		
+
 		li {
 			position: relative;
 			width: 150px;
@@ -70,7 +72,7 @@ nav.nav-main {
 				height: 20px;
 				padding: 10px;
 			}
-			
+
 			&:hover {
 				> ul {
 					visibility: visible;
@@ -79,7 +81,7 @@ nav.nav-main {
 			}
 		}
 	}
-	
+
 	> ul {
 		visibility: visible;
 		opacity: 1;
@@ -94,29 +96,29 @@ nav.nav-main {
 		background-color: transparent;
 		.rounded-corners(0px, 0px, 0px, 0px);
 		.box-shadow(0px, 0px, 0px);
-		
+
 		> li {
 			display: inline-block;
 			width: auto;
 			.rounded-corners(4px, 4px, 0px, 0px);
 		}
-	}	
+	}
 }
 
 
 /* ============================================= FOOTER ====================================== */
 footer {
 	position: relative;
-	
+
 	nav.nav-main {
 		font-size: @fontSizeSmall;
-		
+
 		ul {
 			text-align: center;
 			border-bottom: none;
 		}
 	}
-	
+
 	.copyright {
 		position: absolute;
 		top: 10px;

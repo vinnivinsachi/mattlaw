@@ -10,6 +10,7 @@
     <li><a href='{$siteRoot}/examples/nw-dialog'>Dialog</a></li>
     <li><a href='{$siteRoot}/examples/nw-flash-message'>Flash Message</a></li>
     <li><a href='{$siteRoot}/examples/nw-form'>Form</a></li>
+	<li><a href='{$siteRoot}/examples/nw-gallery'>Gallery</a></li>
     <li><a href='{$siteRoot}/examples/nw-hint'>Hint</a></li>
     <li><a href='{$siteRoot}/examples/nw-get-plugin'>How To Get A Plugin</a></li>
     <li><a href='{$siteRoot}/examples/nw-image-book'>Image Book</a></li>
@@ -30,7 +31,6 @@
 <!--		<li><a href='{$siteRoot}/examples/rialto-dropdown'>Dropdown</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-stars'>Stars</a></li>-->
 <!--		<li><a href='{$siteRoot}/examples/rialto-scrollable'>Scrollable</a></li>-->
-<!--		<li><a href='{$siteRoot}/examples/rialto-gallery'>Gallery</a></li>-->
 </ul>
 
 <div class='spacer-large'></div>
