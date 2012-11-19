@@ -12,8 +12,8 @@ TO DEPLOY:
 4) create log file with write permission at logs/log.txt
 	run these commands from the project root directory:
 		mkdir logs
-		chmod -R 777 logs
 		touch logs/log.txt
+		chmod -R 777 logs
 5) create Smarty temp folder with write permission at tmp/templates_c
 	run these commands from the project root directory:
 		mkdir tmp
