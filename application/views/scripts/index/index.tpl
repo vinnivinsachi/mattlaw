@@ -86,7 +86,7 @@
 	<div class='content-left' style='width: 280px;'>
 		<div class='spacer-medium'></div>
 		<div class='section-header'>
-			<strong>Practice Areas</strong>
+			Practice Areas
 		</div>
 		<div class='spacer-medium'></div>
 		

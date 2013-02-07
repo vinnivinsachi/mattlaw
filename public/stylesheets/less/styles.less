@@ -47,6 +47,30 @@ header{
     border-bottom: 1px solid #666;
 }
 
+header.header-two{
+    height: 150px;
+    //background: purple;
+    padding: 10px 0px;
+    //position: relative;
+    .titleTxt{
+        position: static;
+        //bottom: 0px;
+        padding-left: 10px;
+        font-size: 32px;
+
+    }
+    background-image: url("@{dirImages}/banner-images/header01.jpg");
+    border-bottom: 1px solid #666;
+
+    ul{
+        li{
+            display: inline-block;
+        }
+    }
+}
+
+
+
 #wrapper {
 	display: block;
 	width: @wrapper-width;
@@ -113,6 +137,10 @@ header{
         //overflow: scroll-y;
 }
 
+strong{
+    font-weight: bold;
+    font-size: 1.3em;
+}
 
 /* ============================================= HEADER ====================================== */
 header {
