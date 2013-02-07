@@ -1,0 +1,137 @@
+.rPaletteColor {
+	display: inline-block;
+	overflow: hidden;
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid @colorLine;
+	.rounded-corners();
+	cursor: pointer;
+}
+
+
+.rPaletteColor-small {
+	.rPaletteColor();
+	width: 14px;
+	height: 14px;
+}
+
+.rPaletteText {
+	.rPaletteColor();
+	width: 57px;
+	height: 16px;
+	text-align: center;
+	padding: 1px 3px 3px 3px;
+}
+
+.rPaletteImage {
+	.rPaletteColor();
+	text-align: center;
+	img {
+		border: none;
+	}
+}
+
+
+/* ---------------------------------- RIALTO PALETTE ----------------------------------- */
+.rPalette, .rPaletteIgnore {
+	display: inline-block;
+	//width: 215px;
+	margin: 0px;
+	padding: 5px;
+	border: 1px solid @colorLine;
+	color: @colorBase;
+	background-color: @bgColorBase;
+	.rounded-corners();
+	li {
+		display: inline-block;
+		float: none;
+		margin: 2px;
+		padding: 0px;
+	}
+	li.rSelected {
+		.rPaletteColor, .rPaletteText, .rPaletteImage{
+			border: 1px solid @colorLine;
+			.box-shadow(0px, 0px, 4px, 2px, @colorBase, 0% );
+		}
+	}
+	li:hover {
+		.rPaletteColor, .rPaletteText, .rPaletteImage {
+			border: 1px solid @colorBase;
+		}
+	}
+	&.rPaletteInverted {
+		color: @bgColorBase;
+		background-color: @colorBase;
+		.rPaletteColor, .rPaletteText, .rPaletteImage {
+			border: 1px solid darken(@colorLine, 15%);
+		}
+		li.rSelected {
+			.rPaletteColor, .rPaletteText, .rPaletteImage {
+				border: 1px solid @colorBase;
+				.box-shadow(0px, 0px, 4px, 2px, @bgColorBase, 0% );
+			}
+		}
+		li:hover {
+			.rPaletteColor, .rPaletteText, .rPaletteImage {
+				border: 1px solid @bgColorBase;
+			}
+		}
+	}
+	&.rPaletteLarge {
+		//width: 300px;
+		.rPaletteColor {
+			width: 34px;
+			height: 34px;
+		}
+		/*.rPaletteText {
+			width: 74px;
+			height: 20px;
+			font-size: @fontSizeLarge;
+		}*/
+	}
+	&.rPaletteHideContainer {
+		background-color: transparent;
+		border: none;
+	}
+	&.rPaletteGiant {
+		.rPaletteImage {
+			width: 100px;
+			height: 100px;			
+		}
+	}
+}
+
+
+	
+/* ============================================= COLORS ====================================== */
+	.rPaletteColor-red { background-color: #ff0000; }
+	.rPaletteColor-orange { background-color: #ffa500; }
+	.rPaletteColor-yellow { background-color: #ffff00; }
+	.rPaletteColor-green { background-color: #008000; }
+	.rPaletteColor-blue { background-color: #0000ff; }
+	.rPaletteColor-purple { background-color: #4b0082; }
+	.rPaletteColor-pink { background-color: #ee82ee; }
+	.rPaletteColor-brown { background-color: #5c4033; }
+	.rPaletteColor-tan { background-color: #e0caae; }
+	.rPaletteColor-black { background-color: #000000; }
+	.rPaletteColor-gray { background-color: #999999; }
+	.rPaletteColor-white { background-color: #ffffff; }
+	.rPaletteColor-indigo { background-color: #820BBB; }
+	.rPaletteColor-violet { background-color: #4F2F4F; }
+	.rPaletteColor-pink { background-color: #ee82ee; }
+	.rPaletteColor-dark_tan { background-color: #E3701A; }
+	.rPaletteColor-light_tan { background-color: #FFCC99; }
+	.rPaletteColor-brown { background-color: #5c4033; }
+	.rPaletteColor-tan { background-color: #e0caae; }
+	.rPaletteColor-black { background-color: #000000; }
+	.rPaletteColor-grey { background-color: #999999; }
+	.rPaletteColor-silver { background-color: #C0C0C0; }
+	.rPaletteColor-white { background-color: #ffffff; }
+	.rPaletteColor-gold { background-color: #FBB917; }
+	.rPaletteColor-other {
+		background-color: @bgColorBase;
+		background-image: url(../../../../../images/color-other.png);
+	}
+	

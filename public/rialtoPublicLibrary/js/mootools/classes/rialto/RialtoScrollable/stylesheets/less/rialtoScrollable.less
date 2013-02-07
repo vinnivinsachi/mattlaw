@@ -1,0 +1,52 @@
+.rialtoScrollable {
+	overflow-y: hidden;
+	&::-webkit-scrollbar {
+		//margin: 5px;
+		//padding: 5px;
+	    width: 8px;
+	}
+	&::-webkit-scrollbar-track {
+		margin: 4px;
+		//right: 10px;
+		//padding: 1px;
+	    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	    //border-radius: 10px;
+	}
+	&::-webkit-scrollbar-track-piece {
+		//margin: 4px;
+		//right: 10px;
+	}
+	&::-webkit-scrollbar-corner {
+		//width: 20px;
+	}
+	&::-webkit-resizer {
+		//width: 20px;
+	}
+	&::-webkit-scrollbar-thumb {
+		//width: 4px;
+		//margin: 1px;
+	    border-radius: 4px;
+	    background-color: fadeout(@colorBase, 80%);
+		&:hover {
+			background-color: fadeout(@colorBase, 70%);
+		}
+		&:active {
+			background-color: fadeout(@colorBase, 60%);
+		}
+	}
+	&.rialtoScrollableHover {
+		overflow-y: scroll;
+	}
+	
+	&.rialtoScrollableInverted {
+		&::-webkit-scrollbar-thumb {
+		    background-color: fadeout(@bgColorBase, 60%);
+			&:hover {
+				background-color: fadeout(@bgColorBase, 50%);
+			}
+			&:active {
+				background-color: fadeout(@bgColorBase, 40%);
+			}
+		}
+	}
+}

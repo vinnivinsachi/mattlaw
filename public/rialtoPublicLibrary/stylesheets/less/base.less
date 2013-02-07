@@ -1,0 +1,191 @@
+/* ============================================= GENERAL ====================================== */	
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	min-width: 1080px;
+	height: 100%;
+	color: @colorBase;
+	font-size: @fontSizeNormal;
+}
+
+a {
+	color: @colorBase;
+	text-decoration: none;
+	&:hover{
+		color: @colorRegal;
+	}
+}
+
+
+//img { border: 1px solid @colorLine; }
+
+
+/* ============================================= HEADERS ====================================== */	
+h1, h2, h3, h4, h5 {
+	font-style: italic;
+	color: inherit;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+hgroup {
+	h1 {
+		margin-bottom: 5px;
+	}
+}
+
+
+/* ============================================= FORMS ====================================== */	
+form {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	label {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 70px;
+		padding: 3px 0px;
+		//height: 1.8em;
+		text-align: right;
+	}
+	> div {
+		position: relative;
+		margin: 3px 0px;
+	}
+	input {
+		display: inline-block;
+		height: 1.2em;
+		vertical-align: bottom;
+		&[type='text'] {
+			width: 180px;
+		}
+		&.small {
+			width: 50px;
+		}
+		&.medium {
+			width: 150px;
+		}
+	}
+	input[type="submit"] {
+		display: inline-block;
+		float: right;
+		margin-top: 10px;
+	}
+	select{
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+label {
+	padding-right: 9px;
+	margin-right: 5px;
+	font-weight: bold;
+	&.required {
+		background: url("@{dirImages}/required.png") top right no-repeat;
+	}
+}
+
+textarea {
+	display: inline-block;
+	height: 100px;
+	padding: 0px;
+	margin: 0px;
+}
+
+button, input[type='submit'] {
+	position: relative;
+	display: inline-block;
+	overflow: visible;
+	min-width: 100px;
+	min-height: 25px;
+	padding: 0px 5px;
+	margin: 0px;
+	border: solid 1px @colorLine;
+	cursor: pointer;
+	background-color: @bgColorBase;
+	background: -webkit-gradient(linear, left top, left bottom, from(white), to(gainsboro));
+	background: -moz-linear-gradient(top, white, gainsboro);
+	color: @colorBase;
+	text-align: center;
+	font-size: 1em;
+	.rounded-corners(8px, 8px, 8px, 8px);
+	.box-shadow(0px, 1px, 2px);
+	&.short { width: 100px !important; }
+	&.medium { width: 150px !important; }
+	&.long { width: 200px !important; }
+	&:hover {
+		background-color: @colorSoft;
+		background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(white));
+		background: -moz-linear-gradient(top, #EDEDED, white);
+	}
+	&:active {
+		top: 1px;	
+		background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(white));
+		background: -moz-linear-gradient(top, #EDEDED, white);
+		color: @colorSoft;
+	}
+	&[disabled] {
+		color: @colorSoft;
+		background-color: @colorSoft;
+		background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(white));
+		background: -moz-linear-gradient(top, #EDEDED, white);
+		cursor: default;
+		&:active { top: 0px; }
+	}
+	&.large{
+		line-height: 22px;
+		padding: 6px 15px 7px;
+		font-size: 20px;
+	}
+	&.positive {
+		&:hover {
+			background: -webkit-gradient(linear, left top, left bottom, from(#5ca825), to(#98c877));
+			background: -moz-linear-gradient(top, #5ca825, #98c877);
+		}
+		color: white;
+		background-color: #5BA825;
+		border: 1px solid #377D00;
+		
+		.rounded-corners();
+		background: -webkit-gradient(linear, left top, left bottom, from(#98c877), to(#5ca825));
+		background: -moz-linear-gradient(top, #98c877, #5ca825);
+	}
+	&.neutral {
+		&:hover {
+			background: -webkit-gradient(linear, left top, left bottom, from(#e0cb61), to(#fff6bf));
+			background: -moz-linear-gradient(top, #e0cb61, #fff6bf);
+		}
+		color: @colorWarning;
+		background-color: @bgColorWarning;
+		border: 1px solid @borderColorWarning;
+		background: -webkit-gradient(linear, left top, left bottom, from(#fff6bf), to(#e0cb61));
+		background: -moz-linear-gradient(top, #fff6bf, #e0cb61);
+	}
+}
+
+
+/* ============================================= CONTENT ====================================== */	
+#content-wrapper {
+//	min-height: 300px;
+}
+
+.copyright {
+	font-size: @fontSizeSmall;
+	font-style: italic;
+}
+
+
+/* ============================================= FLASH MESSAGES ====================================== */	
+#flash-messages {
+	ul {
+		list-style-type: none;
+	}
+}

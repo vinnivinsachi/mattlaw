@@ -1,0 +1,57 @@
+/* ---------------------------------- RIALTO TOOLTIP ----------------------------------- */
+.RialtoTooltip, .RialtoTooltip\:hover, .RialtoTooltip\:click, .RialtoTooltip\:clickAlways {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	.rTooltipContent {
+		cursor: default;
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		top: 2em;
+		left: 0px;
+		text-align: left;
+		z-index: 4000;
+		.rTooltipTriggerOverlay {
+			display: inline-block;
+			position: relative;
+			top: -2.5em;
+			left: -0.5em;
+			padding: 0.417em;
+			border: 1px solid @colorLine;
+			border-bottom: 1px solid @bgColorBase;
+			background-color: @bgColorBase;
+			z-index: 95;
+			.rounded-corners(5px, 5px, 0px, 0px);
+		}
+		.rTooltipBody {
+			position: relative;
+			min-width: 300px;
+			padding: 0.417em;
+			top: -2.6em;
+			left: -2em;
+			background-color: @bgColorBase;
+			border: 1px solid @colorLine;
+			z-index: 94;
+			.rounded-corners;
+			.box-shadow;
+		}
+	}
+	&.rTooltipRight {
+		.rTooltipContent {
+			left: auto;
+			right: 0em;
+			.rTooltipTriggerOverlay {
+				left: auto;
+				right: -0.5em;
+				float: right;
+			}
+			.rTooltipBody {
+				clear: both;
+				left: auto;
+				right: -2em;
+			}
+		}
+	}
+}

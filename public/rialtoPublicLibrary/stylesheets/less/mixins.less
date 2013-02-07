@@ -1,0 +1,466 @@
+/* MIXINS */
+	.rounded-corners (@tl:5px, @tr:5px, @br:5px, @bl:5px) {
+		-moz-border-radius: @tl @tr @br @bl;
+		-webkit-border-radius: @tl @tr @br @bl;
+		border-radius: @tl @tr @br @bl;
+	}
+
+	.box-shadow (@l:0px, @r:2px, @b:4px, @s:0px, @c:@colorBase, @p:50%) {
+		-moz-box-shadow: @l @r @b @s fadeout(@c, @p);
+		-webkit-box-shadow: @l @r @b @s fadeout(@c, @p);
+		box-shadow: @l @r @b @s fadeout(@c, @p);
+	}
+	.inverted-box-shadow (@l:0px, @r:0px, @b:1px, @s:1px, @c:@colorBase, @p:50%) {
+		-moz-box-shadow: inset @l @r @b @s fadeout(@c, @p);
+		-webkit-box-shadow: inset @l @r @b @s fadeout(@c, @p);
+		box-shadow: inset@l @r @b @s fadeout(@c, @p);
+	}
+ 	.no-box-shadow(){
+ 		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+ 	}
+	.transition(@attribute:all, @time:0.3s, @delayTime:0s, @method:cubic-bezier(0.25, 0.1, 0.25, 1)) {
+		-webkit-transition:@attribute @time @method @delayTime;  
+   		-moz-transition:@attribute @time @method @delayTime;  
+   		-o-transition:@attribute @time @method @delayTime;  
+   		transition:@attribute @time @method @delayTime;  
+	}
+
+	.bordered(@top:0px, @right:0px, @bottom:0px, @left:0px, @style:solid, @color:@colorLine){
+		border-top: @top @style @color;
+		border-right: @right @style @color;
+		border-bottom: @bottom @style @color;
+		border-left: @left @style @color;
+	}
+
+	.font-style(@color:@colorBase, @size:@fontSizeNormal, @weight:@fontWeightNormal){
+		color:@color;
+		font-size:@size;
+		font-weight:@weight;
+	}
+	
+	.border-box-sizing(){
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+	}
+	
+	.box-basic(){
+		display: box;
+		display: -moz-box;
+		display: -o-box;
+		display: -webkit-box;
+		.border-box-sizing();
+	}
+	
+	.reverse-box(){
+		-moz-box-direction: reverse;
+		-o-box-direction: 	reverse;
+		-webkit-box-direction: reverse;
+		box-direction: reverse;
+	}
+	.box-flex(@a:0){
+		-moz-box-flex: @a;
+		-o-box-flex: @a;
+		-webkit-box-flex: @a;
+		box-flex: @a;
+	}
+
+/* ============================================= GENERAL CLASSES ====================================== */
+	.flex-box{
+		.box-basic();
+	}
+	.box-hor{
+		.box-basic();
+		-moz-box-orient: horizontal;
+		-o-box-orient: 	horizontal;
+		-webkit-box-orient: horizontal;
+		box-orient: horizontal; 
+	}
+	.box-ver{
+		.box-basic();
+		-moz-box-orient: vertical;
+		-o-box-orient: 	vertical;
+		-webkit-box-orient: vertical;
+		box-orient: vertical;
+	}
+	.box-flex-1{ .box-flex(1) }
+	.box-flex-2{ .box-flex(2) }
+	.box-flex-3{ .box-flex(3) }
+	.box-flex-4{ .box-flex(4) }
+	.box-flex-5{ .box-flex(5) }
+	
+	.box-pack-start {
+		box-pack: start;
+		-moz-box-pack: start;
+		-webkit-box-pack: start;
+	}
+	
+	.box-pack-center {
+		box-pack: center;
+		-moz-box-pack: center;
+		-webkit-box-pack: center;
+	}
+	
+	.box-pack-end {
+		box-pack: end;
+		-moz-box-pack: end;
+		-webkit-box-pack: end;
+	}
+	
+	.box-pack-justify {
+		box-pack: justify;
+		-moz-box-pack: justify;
+		-webkit-box-pack: justify;
+	}
+	
+	.no-padding { padding: 0px !important; }
+	.padding-top-none { padding-top: none !important; }
+	.padding-top-small { padding-top: 5px !important; }
+	.padding-top-medium { padding-top: 10px !important; }
+	.padding-top-large { padding-top: 20px !important; }
+	.padding-bottom-small { padding-bottom: 5px !important; }
+	.padding-bottom-medium {
+		padding-bottom: 10px !important;
+	}
+	.padding-bottom-large {
+		padding-bottom: 20px !important;
+	}
+	.padding-left-small { padding-left: 5px !important; }
+	.padding-left-medium { padding-left: 10px !important; }
+	.padding-left-large { padding-left: 20px !important; }
+	.padding-right-small { padding-right: 5px !important; }
+	.padding-right-medium { padding-right: 10px !important; }
+	.padding-right-large { padding-right: 20px !important; }
+	.padding-small { padding: 5px; }
+	.padding-medium { padding: 10px; }
+	.padding-large { padding: 20px; }
+	.margin-left-small { margin-left: 5px !important; }
+	.margin-left-medium { margin-left: 10px !important; }
+	.margin-left-large { margin-left: 20px !important; }
+	.margin-right-small { margin-right: 5px !important; }
+	.margin-right-medium { margin-right: 10px !important; }
+	.margin-right-large { margin-right: 20px !important; }
+	.margin-top-small { margin-top: 5px !important}
+	.margin-top-medium { margin-top: 10px !important}
+	.margin-top-large { margin-top: 20px !important}
+	.margin-bottom-small { margin-bottom: 5px !important}
+	.margin-bottom-medium { margin-bottom: 10px !important}
+	.margin-bottom-large { margin-bottom: 20px !important}
+	.margin-small { margin: 5px; }
+	.margin-medium { margin: 10px; }
+	.margin-large { margin: 20px; }
+
+	.width-auto { width: auto !important; }
+	.width-100 { width: 100% !important; }
+	.width-50 { width: 50% !important; }
+        .width-30 { width: 30% !important; }
+	.height-100 { height: 100% !important; }
+
+	.align-left { text-align: left !important; }
+	.align-right { text-align: right !important; }
+	.align-center { text-align: center !important; }
+	.align-top { vertical-align: top !important; }
+	.align-middle { vertical-align: middle !important; }
+	.align-bottom { vertical-align: bottom !important; }
+	.position-relative { position: relative !important; }
+
+	.float-left { float: left !important; }
+	.float-right { float: right !important; }
+	.float-none { float: none !important; }
+	.overflow-hidden { overflow: hidden !important; }
+	.overflow-visible { overflow: visible !important; }
+	.clear-both { clear: both; }
+
+	.borderless { border: none !important; background-color: none;}
+	.border-left { border-left: 1px solid @colorLine; }
+	.border-right { border-right: 1px solid @colorLine; }
+	.border-top { border-top: 1px solid @colorLine; }
+	.border-bottom { border-bottom: 1px solid @colorLine; }
+	.bordered { border: 1px solid @colorLine }
+
+	.inactive { color: @colorSoft !important; }
+	.pending {
+		color: @colorSoft;
+	}
+	
+	.rounded {
+		.rounded-corners();
+	}
+
+	.hidden { display: none !important; }
+	.date { width: 90px; }
+	.inline-block {
+		display: inline-block !important;
+		width: auto;
+		vertical-align: top;
+	}
+	.block { display: block !important; }
+	.display-table { display: table !important; }
+	.table-cell { display: table-cell !important; }
+	.table-row{
+		display: table-row !important;
+	}
+	.attention{
+		background-color: @bgColorInfo;
+	}
+
+	.img-mini {
+		width: 100px;
+		height: 100px;	
+	}
+	.img-small {
+		width: 200px;
+		height: 180px;
+	}
+	.img-medium {
+		width: 200px;
+		height: 200px;
+	}
+	.img-large {
+		width: 300px;
+		height: 350px;
+	}
+	.img-thumb-mini {
+		width: 20px;
+		height: 20px;
+	}
+	.img-thumb-small {
+		width: 35px;
+		height: 35px;
+	}
+	.img-thumb-medium {
+		width: 40px;
+		height: 40px;
+	}
+	.img-thumb-large {
+		max-width: 60px;
+		max-height: 60px;
+	}
+
+	#debugg {
+		position: fixed; 
+		top: 0px;
+		right: 0px;
+		width: 300px;
+		background: @bgColorWarning;
+		z-index: 1;
+	}
+
+	.ui-effects-transfer {
+		border: 2px dotted @colorBase;
+		z-index: 7000;
+	}
+	.sortable-placeholder {
+		width: 170px;
+		height: 128px;
+		border: 1px dashed @colorBase;
+		.rounded-corners();
+	}
+
+	.above-all { z-index: 10000 !important; }
+
+
+/* ============================================= HTML FONTS ====================================== */
+/* [1] FONTS */
+	.font-small { font-size: @fontSizeSmall !important; }	
+	.font-medium { font-size: @fontSizeNormal !important; }
+	.font-large { font-size: @fontSizeLarge !important; }
+	.font-giant { font-size: @fontSizeGiant !important; }
+	.font-bold { font-weight: bold; }
+//	.price { .font-style(@colorLine, @fontSizeNormal, @fontWeightNormal) }
+	.product-category { .font-style(@colorAccent, auto, bold); }
+	.product-brand { .font-style(@colorBase, auto, bold); }
+	//.product-name { .font-style(@colorBase, auto, normal); }
+	.small {
+		font-size: 0.866em;
+		line-height: 1.5em;
+	}
+	.font-accent { .font-style(@colorAccent, @fontSizeLarge, bold); }
+	.font-normal { .font-style(@colorBase, @fontSizeNormal, normal); }
+	.accent-color { color: @colorAccent; }
+	.success-color, .color-success {
+		color: @colorSuccess;
+	}
+	.color-error {
+		color: @colorError
+	}
+
+
+/* ============================================= HTML SPACERS ====================================== */
+	.spacer-small { height: 5px; }
+	.spacer-medium { height: 10px; }
+	.spacer-large { height: 20px; }
+	.spacer-hor-small { 
+		width: 5px; 
+		display: inline-block;
+	}
+	.spacer-hor-medium { 
+		width: 10px; 
+		display: inline-block;
+	}
+	.spacer-hor-large { 
+		width: 20px; 
+		display: inline-block;
+	}
+	.spacer-td-small { width: 5px; }
+	.spacer-td-medium { width: 10px; }
+	.spacer-td-large { width: 20px; }
+
+
+/* ============================================= ICONS ====================================== */
+	.icon {
+		display: inline-block;
+		vertical-align: text-bottom;
+		overflow: hidden;
+		width: 16px;
+		height: 16px;
+		margin: 0px;
+		padding: 0px;
+		background-image: url("@{dirRialtoPublicLibrary}/images/icons.png");
+		background-repeat: no-repeat;
+	}
+
+	.icon-arrow-down { background-position: 0px 0px; }
+	.icon-arrow-down-inverted { background-position: 0px -16px; }
+	.icon-arrow-up { background-position: -16px 0px; }
+	.icon-arrow-up-narrow { background-position: -112px -112px;}
+	.icon-arrow-up-inverted { background-position: -16px -16px; }
+	.icon-arrow-right { background-position: -64px 0px; }
+	.icon-arrow-up-down {
+		background-position: -32px -32px;
+	}
+	.icon-arrow-left-inverted {
+		background-position: -64px -32px;
+	}
+	.icon-double-bar-inverted{
+		background-position: -80px -32px;
+	}
+	.icon-arrow-right-inverted { background-position: -64px -16px; }
+	.icon-cart { background-position: -48px 0px; }
+	.icon-cart-inverted { background-position: -48px -16px; }
+	.icon-invite-friend { background-position: -32px 0px; }
+	.icon-invite-friend-inverted { background-position: -32px -16px; }
+	.icon-check { background-position: -48px -48px; }
+	.icon-feedback-positive { background-position:0px -64px; }
+	.icon-add { background-position:0px -64px; }
+	.icon-product-suggest { background-position:0px -64px; }
+	.icon-feedback-neutral { background-position:-16px -64px; }
+	.icon-feedback-negative { background-position:-32px -64px; }
+	.icon-question { background-position: 0px -48px; }
+	.icon-rp { background-position: -64px -48px; }
+	.icon-required { background-position: 0px -48px; }
+	.icon-email { background-position: 0px -32px; }
+	.icon-sms { background-position: -16px -32px; }
+	.icon-required { background-position: -0px -80px; }
+	.icon-more-hor { background-position: -16px -80px; }
+	.icon-more-vert { background-position: -32px -80px; }
+	.icon-revert {
+		background-position: -48px -64px;
+		cursor: pointer;
+		&:hover { background-position: -64px -64px; }
+	}
+	.icon-edit {
+		background-position: -80px -48px;
+		cursor: pointer;
+		&:hover { background-position: -80px -64px; }
+	}
+	.icon-x {
+		background-position: -16px -48px;
+		cursor: pointer;
+		&:hover { background-position: -32px -48px; cursor: pointer;}
+	}
+	.icon-addToCart { background-position: -80px 0px; }
+	.icon-addToCompareChart { background-position: -80px -16px; }
+	.icon-flag { background-position: -96px -80px; }
+	.icon-payment { background-position: -96px 0px; }
+	.icon-shipment { background-position: -112px -16px; }
+	.icon-delivered { background-position: -96px -16px;	}
+	.icon-returned { background-position: -112px -32px; }
+	.icon-return-delivered { background-position: -96px -32px; }
+	.icon-checkout-complete { background-position: -96px -48px; }
+	.icon-pending-completion { background-position: -112px -48px; }
+	.icon-receipt { background-position: -96px -64px; }
+	.icon-trackpackage{ background-position: -112px -64px; }
+	.icon-attention{ background-position: -96px -80px; }
+	.icon-request-feedback{ background-position: -112px -80px; }
+	.icon-order-completed{ background-position: -96px -96px; }
+	.icon-return-completed{ background-position: -112px -96px; }
+	.icon-order-cancelled{ background-position: -96px -112px; }
+	.icon-notes { background-position: -48px -80px; }
+	.icon-actions { background-position:-64px -96px; }
+	.icon-actions-inverted { background-position:-80px -96px; }
+	.icon-messages { background-position: -48px -80px; }
+	
+	/* tooltip status icon */
+	.icon-status-order_placed { background-position: -96px 0px; }
+	.icon-status-order_shipped { background-position: -112px -16px; }
+	.icon-status-order_delivered { background-position: -96px -16px;	}
+	.icon-status-order_delivered_extended { background-position: -96px -16px;	}
+	.icon-status-order_returned { background-position: -112px -32px; }
+	.icon-status-order_return_delivered { background-position: -112px -96px; }
+	.icon-status-order_returned_extended { background-position: -112px -32px; }
+	.icon-status-order_completed { background-position: -96px -96px; }
+	.icon-status-order_cancelled { background-position: -96px -112px; }
+	
+	
+	/* icon status */
+	.icon-status-listed { background-position: 0px -96px}
+	.icon-status-approved { background-position: 0px -96px}
+	.icon-status-in_progress { background-position: -32px -96px}
+	.icon-status-suspended { background-position: -16px -96px}
+	.icon-status-pending_approval { background-position: -16px -96px}
+	.icon-status-unlisted { background-position: -16px -96px}
+	.icon-status-removed { background-position: -48px -96px}
+	.icon-status-denied { background-position: -48px -96px}
+	
+/* ICON MEDIUM */
+	.icon-medium {
+		.icon;
+		width: 26px;
+		height: 26px;
+		background-image: url("@{dirRialtoPublicLibrary}/images/icons-medium.png");
+	}
+	.icon-medium-x { 
+		background-position: 0px 0px;
+		cursor: pointer;
+		&:hover { background-position: -26px 0px;}
+	}
+	.icon-medium-trash { 
+		background-position: -52px 0px;
+		cursor: pointer;
+		&:hover { background-position: -78px 0px;}
+	}
+
+/* ICON LARGE */
+	.icon-large{
+		.icon;
+		width: 34px;
+		height: 34px;
+		background-image: url("@{dirRialtoPublicLibrary}/images/icons-large.png");
+	}
+	.icon-large-compare-chart{ background-position: 0px 0px; }
+	.icon-large-search{ background-position: -34px 0px; }
+	.icon-large-trash{ background-position: -68px 0px; }
+	.icon-large-rp { background-position: -136px 0px; }
+	.icon-large-pin {
+		background-position: 0px -136px;
+		cursor: pointer;
+		&:hover { background-position: -34px -136px; }
+	}
+	.icon-large-pin-cancel {
+		background-position: 0px -102px;
+		cursor: pointer;
+		&:hover { background-position: -34px -102px; }
+	}
+	.icon-large-quickview {
+		background-position: -68px -136px;
+		cursor: pointer;
+		&:hover { background-position: -102px -136px; }
+	}
+	.icon-large-addToCart{
+		background-position: -102px 0px;
+		cursor: pointer;
+		&:hover { background-position: -102px -32px; }
+	}

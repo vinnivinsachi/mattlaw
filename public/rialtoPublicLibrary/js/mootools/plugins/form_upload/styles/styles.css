@@ -1,0 +1,83 @@
+
+/* some general styles */
+
+
+
+
+.formRow {
+	overflow: auto;
+	padding: 5px 0;
+	max-width: 100%;
+}
+
+.formRow label {
+	padding: 4px;
+	margin: 0 3px 0 0;
+}
+
+
+/* Drag & Drop file uploading */
+
+.droppable {
+	border: #92cae4 1px solid;
+	border-radius: 3px;
+	background: #d5edf8;
+	color: #205791;
+	padding: 20px;
+	margin: 10px;
+	clear: both;
+	text-align: center;
+}
+
+.droppable.hover {
+	background: #92cae4;
+}
+
+.uploadList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.uploadItem {
+	overflow: hidden;
+	border-bottom: #BCBCBC 1px solid;
+	margin: 0 20px;
+	padding: 3px;
+}
+
+.uploadItem span {
+	overflow: hidden;
+	width: 150px;
+	float: left;
+	display: block;
+}
+
+a.addInputRow,
+a.delInputRow,
+.uploadItem a {
+	display: inline-block;
+	background: url(add.png) no-repeat;
+	height: 16px;
+	width: 16px;
+	text-indent: -999px;
+}
+
+.uploadItem a {
+	float: left;
+	display: block;
+	padding-left: 20px;
+	background-image: url(delete.png);
+}
+
+a.delInputRow {
+	background-image: url(delete.png);
+}
+
+.progress {
+	margin: 5px 0;
+	height: 15px;
+	border-radius: 3px;
+	background: #545A74;
+}
+

@@ -1,0 +1,147 @@
+/* ---------------------------------- RIALTO TABLE ACCORDION ----------------------------------- */
+.rTable {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	color: @colorBase;
+	thead th {
+		background: none;
+		text-align: left;
+		border-bottom: 2px dashed @colorLine;
+		padding: 4px 0px 2px 0px;
+		margin: 0px;
+		cursor: pointer;
+	}
+	caption {
+		background: none;
+		margin: 0px;
+		padding: 0px;
+	}
+	tr.positive { background-color: @bgColorSuccess; }
+	tr.negative { background-color: @bgColorError; }
+	tr.neutral { background-color: @bgColorWarning; }
+	tr.inactive { color: @colorLine; }
+	td {
+		text-align: left;
+		border-bottom: 1px solid @colorLine;
+		padding: 3px;
+	}
+	.rTable-header-row {
+		td { 
+			font-weight: bold; 
+			border-bottom: none;
+			background-color: @colorSoft;
+			color: @bgColorBase;
+		}
+		td.first { border-left: 1px solid @colorSoft; }
+		td.last { border-right: 1px solid @colorSoft; }
+	}
+	td.indent {
+		width: @spaceMedium;
+		background-color: @bgColorBase;
+		border: none;
+	}
+	
+	// sorting styling
+	th.headerSortDown{
+		background-color: @bgColorInfo;	
+		.icon{
+			margin-bottom: -1px;	
+		}
+		.icon-arrow-up-down{
+			.icon-arrow-up;
+		}	
+	}
+	th.headerSortUp{
+		background-color: @bgColorInfo;	
+		.icon{
+			margin-bottom: -1px;	
+		}
+		.icon-arrow-up-down{
+			.icon-arrow-down;	
+		}
+	}
+	.icon-arrow-up-down{
+		margin-bottom: -1px;	
+	}
+}
+
+
+.rTableClickable {
+	.rTable();
+    > tbody > tr { 
+		height: 50px;
+		cursor: pointer;
+		&:hover {
+			background-color: @bgColorHover; 
+			td.borderless { background-color: @bgColorBase; }
+		}
+		&.no-hover:hover {
+			background-color: inherit;
+			cursor: default;
+		}
+	}
+	thead tr th {
+		height: 30px;
+		cursor: auto;
+		/*&:hover { 
+			//background-color: @bgColorBase;
+		}*/
+	}		
+}
+
+.rialtoTableAccordion {
+	.rTableClickable;
+	/*tbody > tr > td { border: none; }*/
+	tr.rialtoTableAccordionHidden {
+		height: 0px;
+		display: none;
+		background: @bgColor2;
+		&:hover {
+			background: @bgColor2;
+			//	background-color: inherit;
+			cursor: auto;
+		}
+		> td {
+			position: relative;
+			padding: 0px;
+			border-bottom: none;
+		 	.rTableAccordionContent {
+				position: relative;
+				overflow: hidden;
+			}
+		}
+		&.rSelected {
+			display: table-row;
+			> td {
+				border-bottom: 1px solid @colorLine !important;
+			}
+		}
+	}
+	
+	.RialtoTableAccordion {
+		&.rSelected {
+			td { 
+				font-weight: bold; 
+				//border-bottom: 1px solid @colorLine;
+				background-color: @colorSoft;
+				color: white;
+			}
+			.borderless {
+				background-color: @bgColorBase;
+			}
+			background-color : @bgColor3;
+		
+			&:hover {
+				cursor : auto;	
+			}
+		
+			td.first { border-left: 1px solid @colorSoft; }
+			td.last { border-right: 1px solid @colorSoft; }
+		}
+	}
+	
+
+	thead tr th{
+		padding: 3px;
+	}
+}

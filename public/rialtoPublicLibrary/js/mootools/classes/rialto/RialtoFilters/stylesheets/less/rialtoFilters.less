@@ -1,0 +1,149 @@
+/* ============================================= RIALTO FILTERS ====================================== */
+.rFilters {
+	display: block;
+	width: 224px;
+	background-color: @bgColorBase;
+	h1 {
+		height: 24px;
+		margin: 0px;
+		padding-left: 15px;
+		padding-top: 6px;
+		border-top: 1px solid @colorBase;
+		border-bottom: 1px solid @colorBase;
+		background-color: @colorAccent;
+		font-size: 1.5em;
+		color: @bgColorBase;
+	}
+	nav > ul > li {
+		float: none;
+		border-top: 1px solid @colorLine;
+		&:last-of-type { border-bottom: 1px solid @colorLine; }
+		.icon-arrow-right {
+			float: right;
+			margin-right: 5px;
+		}
+		a {
+			display: block;
+			height: 20px;
+			margin: 0px;
+			padding-top: 2px;
+			padding-left: 24px;
+			color: @colorBase;
+			text-decoration: none;
+		}
+		.rFiltersList {
+			display: none;
+			position: absolute;
+			top: -1px;
+			right: -252px;
+			width: 250px;
+			max-height: 300px;
+			padding: 5px 1px 5px 1px;
+			background-color: inherit;
+			color: @bgColorBase;
+			.rounded-corners(0px, 8px, 8px, 8px);
+			.box-shadow;
+			z-index: 2;
+			> .RialtoFilters\:listItem {
+				float: none;
+				display: block;
+				height: 20px;
+				margin: 0px;
+				padding: 0px 0px 0px 16px;
+				color: @bgColorBase;
+				text-decoration: none;
+				cursor: pointer;
+				&:hover {
+					background-color: @bgColorBase;
+					color: @colorBase;
+				}
+				&.rSelected {
+					background-image: url('check.png');
+					background-position: 0px 1px;
+					background-repeat: no-repeat;
+				}
+			}
+			.section-header {
+				margin-top: 10px;
+				margin-left: 15px;
+				margin-right: 10px;
+				border-color: @bgColorBase;
+				color: @bgColorBase;
+				font-weight: normal;
+			}
+			/*.palette {
+				border: none;
+				background-color: transparent;
+				margin-left: 10px;
+				> li.selected {
+					.color, .toggle {
+						border: 1px solid @colorBase;
+						.box-shadow(0px, 0px, 4px, 2px, @bgColorBase, 0% );
+					}
+				}
+				> li:hover {
+					.color, .toggle {
+						border: 1px solid @colorBase;
+					}
+				}
+			}*/
+		}
+		&:hover {
+			.icon-arrow-right { .icon-arrow-right-inverted; }
+			height: 21px;
+			margin-right: -1px;
+			background-color: fadeout(@colorBase, 10%);
+			border-top: 1px solid @colorBase;
+			border-bottom: 1px solid @colorBase;
+			border-right: 1px solid lighten(@colorBase, 10%);
+			a { color: @bgColorBase; }
+			> ul { display: block; }
+		}
+		&:last-of-type:hover { height: 22px; }
+	}
+	ul#saved-searches {
+		.section-header {
+			width: 230px;
+			height: 0px;
+			margin: 0px 10px 5px 10px;
+			line-height: 0px;
+		}
+		li a {
+			padding-left: 0px;
+		}
+		li:hover a {
+			color: @colorBase;
+		}
+		li.no-hover:hover {
+			background-color: transparent;
+			color: inherit;
+			cursor: default;
+		}
+	}
+}
+.rFiltersSelectedList {
+	font-size: 0.822em;
+	padding: 5px;
+	.section-header {
+		margin: 5px 0px 0px 0px;
+		font-weight: bold;
+		font-size: 1em;
+		color: @colorAccent;
+		border: none;
+	}
+	> ul {
+		margin-top: 10px;
+		//> div.section-header { display: none; }
+		> li {
+			//display: none;
+			width: 100%;
+			height: 1.9em;
+			padding-left: 10px;
+			.icon-x {
+				float: right;
+				margin-right: 10px;
+			}
+			&.rialtoFiltersAll { display: block; }
+		}
+	}
+}

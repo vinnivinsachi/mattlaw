@@ -1,0 +1,63 @@
+.rDropdown {
+	position: relative;
+	display: inline-block;
+	.RialtoDropdown {
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+		width: 19px;
+		height: 18px;
+		padding: 2px 26px 2px 4px;
+		color: @bgColorBase;
+		background-color: lighten(@colorBase, 10%);
+		.rdActionsIcon {
+			.icon();
+			.icon-actions-inverted();
+		}
+		.rdArrow {
+			position: absolute;
+			right: 4px;
+			padding-left: 2px;
+			border-left: solid 1px @colorBase;
+			span {
+				.icon();
+				.icon-arrow-down-inverted();
+			}
+		}
+	}
+	ul {
+		display: none;
+		position: absolute;
+		top: 22px;
+		left: 0px;
+		right: auto;
+		white-space: nowrap;
+		//padding: 5px;
+		color: @bgColorBase;
+		background-color: lighten(@colorBase, 10%);
+		.box-shadow();
+		.rounded-corners(0px, 5px, 5px, 5px);
+		li {
+			padding: 2px;
+		}
+		a {
+			display: block;
+			padding: 5px 10px 5px 10px;
+			height: 22px;
+			color: inherit;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+				background-color: @bgColorBase;
+				color: @colorBase;				
+			}
+		}
+	}
+	&.rDropdownLeft {
+		ul {
+			left: auto;
+			right: 0px;
+			.rounded-corners(5px, 0px, 5px, 5px);
+		}
+	}
+}

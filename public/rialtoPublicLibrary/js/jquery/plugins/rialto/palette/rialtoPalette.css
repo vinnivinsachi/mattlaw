@@ -1,0 +1,77 @@
+/* ============================================= CONTAINER ====================================== */
+	.rialto-palette {
+		display: inline-block;
+		width: 255px;
+		margin: 0px;
+		padding: 5px;
+		border: 1px solid #cccccc;
+		background-color: #ffffff;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+	.rialto-palette li {
+		display: inline-block;
+		float: none;
+		margin: 2px;
+		padding: 0px;
+	}
+
+	.rialto-palette .toggle {
+		width: 57px;
+	}
+
+
+/* ============================================= COLORS ====================================== */
+	.rialto-palette .color {
+		display: inline-block;
+		overflow: hidden;
+		width: 20px;
+		height: 20px;
+		margin: 0px;
+		padding: 0px;
+		border: 1px solid #cccccc;
+		cursor: pointer;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+	}
+	
+	.rialto-palette li.selected .color {
+		border: 1px solid #ffffff;
+		-moz-box-shadow: 0px 2px 4px 0px #222222;
+		-webkit-box-shadow: 0px 2px 4px 0px #222222;
+		box-shadow: 0px 2px 4px 0px #222222;
+	}
+	
+	.rialto-palette .color:hover {
+		border: 1px solid #222222;
+	}
+	
+	.rialto-palette .color-red { background-color: #ff0000; }
+	.rialto-palette .color-orange { background-color: #ffa500; }
+	.rialto-palette .color-yellow { background-color: #ffff00; }
+	.rialto-palette .color-green { background-color: #008000; }
+	.rialto-palette .color-blue { background-color: #0000ff; }
+	.rialto-palette .color-purple { background-color: #4b0082; }
+	.rialto-palette .color-pink { background-color: #ee82ee; }
+	.rialto-palette .color-brown { background-color: #5c4033; }
+	.rialto-palette .color-tan { background-color: #e0caae; }
+	.rialto-palette .color-black { background-color: #000000; }
+	.rialto-palette .color-grey { background-color: #999999; }
+	.rialto-palette .color-white { background-color: #ffffff; }
+	.rialto-palette .color-other {
+		background-color: #ffffff;
+		background-image: url(../images/color-other.png);
+	}
+	
+	
+/* ============================================= TOGGLE ====================================== */
+	.rialto-palette .toggle {
+		.color;
+		width: 70px;
+		height: 16px;
+		text-align: center;
+		padding: 1px 3px 3px 3px;
+	}

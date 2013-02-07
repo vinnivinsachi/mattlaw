@@ -1,0 +1,21 @@
+/* ---------------------------------- RIALTO FORM VALIDATOR ADVICE MESSGE ----------------------------------- */
+	.rv-advice {
+		position: absolute;
+		display: inline-block;
+		opacity: 0;
+		margin-left: -100%;
+		padding: 3px 3px 3px 5px;
+		min-width: 100px;
+		max-width: 150px;
+		background-color: @borderColorError;
+		color: @colorBase;
+		font-size: @fontSizeSmall;
+		//border: 2px solid @borderColorError;
+		//color: @colorError;
+		.rounded-corners();
+	}
+
+	form input.validation-failed {
+		background-color: @bgColorError;
+		//border: 1px solid @borderColorError;
+	}

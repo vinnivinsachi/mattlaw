@@ -1,0 +1,5 @@
+*.DS_Store
+/stylesheets/css/base.css
+/stylesheets/css/main.css
+/js/mootools/classes/rialto/*/stylesheets/*/*.css
+/js/mootools/classes/rialto/RialtoForm/RialtoValidator/stylesheets/*/*.css

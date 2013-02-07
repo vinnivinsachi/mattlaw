@@ -1,0 +1,116 @@
+/* ---------------------------------- RIALTO IMAGE BOOK ----------------------------------- */
+.rialtoImageBook {
+	display: inline-block;
+	line-height: 0px;
+	.rialtoImageBook-main-image {
+		display: table-cell;
+		margin: 0px;
+		padding: 0px;
+		border: 1px solid @colorBase;
+		background: white;
+		text-align: center;
+		vertical-align: middle;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	ul {
+		margin-top: 5px;
+		li {
+			display: inline-block;
+			float: left;
+			border: 1px solid @colorLine;
+			text-align: center;
+			background: white;
+			&:last-of-type { margin: 0px; }
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			&:hover { border-color: @colorBase;	}
+			&.selected {
+				border-color: @colorBase;
+				a { cursor: default; }
+			}
+		}
+	}
+	img { border: none; }
+}
+
+/* IMAGE-BOOK-LARGE */
+	.rib-large {
+		//.rImageBook();
+		.rialtoImageBook-main-image {
+			width: 302px;
+			height: 350px;
+		}
+		ul li {
+			width: 60px;
+			height: 60px;
+			margin-right: 18px;
+			background: white;
+
+		}
+	}
+
+/* IMAGE-BOOK-MEDIUM */
+	.rib-medium {
+		//.rImageBook();
+		.rialtoImageBook-main-image {
+			width: 199px;
+			height: 200px;
+		}
+		ul li {
+			width: 40px;
+			height: 40px;
+			margin-right: 11px;
+			background: white;
+
+		}
+	}
+
+
+/* IMAGE-BOOK-SMALL */
+	.rib-small {
+		//.rImageBook();
+		.rialtoImageBook-main-image {
+			width: 179px;
+			height: 200px;
+		}
+		ul li {
+			width: 35px;
+			height: 35px;
+			margin-right: 11px;
+			background: white;
+
+		}
+	}
+	
+/* IMAGE-BOOK-WINDOW */
+	.rib-window {
+		width: 100%;
+		height: 100%;
+		.rialtoImageBook-main-image {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.rib-window-left {
+			display: inline-block;
+			width: 90%;
+			height: 100%;
+		}
+		.rib-window-right {
+			display: inline-block;
+			width: 9%;
+			vertical-align: top;
+			ul li {
+				width: 60px;
+				height: 60px;
+				margin-right: 18px;
+				background: white;
+
+			}
+		}
+	}

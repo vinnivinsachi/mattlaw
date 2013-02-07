@@ -1,0 +1,60 @@
+/* ---------------------------------- RIALTO PAGINATION ----------------------------------- */
+.rPagination {
+	position: fixed;
+	width: 455px;
+	height: 30px;
+	padding-top: 8px;
+	margin-left: -240px;
+	bottom: 30px;
+	left: 50%;
+	border: 1px solid @bgColorBase;
+	border-bottom: none;
+	color: @bgColorBase;
+	background-color: fadeout(@colorBase, 10%);
+	text-align: center;
+	font-size: 16px;
+	a {
+		color: @bgColorBase;
+		text-decoration: none;
+	}
+	> a {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.rPaginationViewportCurrent {
+		position: absolute;
+		left: 228px;
+		top: -6px;
+		.icon;
+		.icon-arrow-down-inverted;
+		margin-left: -8px;
+		//border: solid 1px @bgColorBase;
+	}
+	.rPaginationViewport {
+		position: relative;
+		overflow: hidden;
+		margin: 0px auto;
+		width: 330px;
+		overflow: hidden;
+		display: inline-block;
+		ul {
+			position: relative;
+			overflow: hidden;
+			height: 25px;
+			width: 3000px;
+			display: block;
+			li {
+				display: inline-block;
+				float: left;
+				text-align: center;
+				width: 30px;
+				padding: 0px;
+				&.rPaginationCurrent {
+					font-weight: bold;
+					font-size: 26px;
+					margin-top: -7px;
+				}
+			}
+		}
+	}
+}

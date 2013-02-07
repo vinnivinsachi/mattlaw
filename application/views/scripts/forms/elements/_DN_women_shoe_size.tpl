@@ -1,0 +1,15 @@
+<select name='attr[shoe_size]' name="foot_size">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    	<option value="European 34">European 34</option>
+		<option value="European 34.5">European 34.5</option>
+        <option value="European 35">European 35</option>
+        <option value="European 35.5">European 35.5</option>
+        <option value="European 36">European 36</option>
+        <option value="European 36.5">European 36.6</option>
+        <option value="European 37">European 37</option>
+        <option value="European 37.5">European 37.5</option>
+        <option value="European 38">European 38</option>
+        <option value="European 38.5">European 38.5</option>
+        <option value="European 39">European 39</option>
+        <option value="European 39.5">European 39.5</option>
+        <option value="European 40">European 40</option>
+</select>
