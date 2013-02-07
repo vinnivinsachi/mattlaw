@@ -1,6 +1,6 @@
 <?php
 
-class PartialsController extends Application_Controller
+class PartialsController extends Custom_Zend_Controller_Action
 {
 
     public function init() {

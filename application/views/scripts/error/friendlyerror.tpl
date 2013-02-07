@@ -1,4 +1,4 @@
-<div align='center' style='margin-top:100px;'>
+<div align='center' style='margin-top:100px; color: white;'>
 	<h1>An error occurred</h1>
 	
 	<p>We have been notified of this issue and are working to fix it!  Thanks!</p>

@@ -1,80 +1,68 @@
 <?php
 
-class ExamplesController extends Application_Controller
+class ExamplesController extends Custom_Zend_Controller_Action
 {
-    public function init() {
-    	parent::init();
 
-		$this->_ajaxContext->addActionContext('image-upload', 'json')
-		                   ->initContext();
+    public function init() {
+    	parent::init();  // Because this is a custom controller class
+
+		$this->_ajaxContext->addActionContext('rialto-ajax', 'json')
+						   ->addActionContext('rialto-pagination-load', 'json')
+			 			   ->initContext();
+
+		// get a requested variable
+			$var = $this->_request->getParam('paramName');
     }
 
     public function indexAction() {}
 
-
-    // ------------------------------------------------------------------ Zend Stuff ----------------------------------------------------------------------
-    public function zendAction() {}
-    public function partialAction() {}
-
-    public function partialEvalAction() {
-	    $this->view->evaluatedPartial = $this->evalViewScript('partials/example.tpl', array('passedVar'=>'<div>This div was passed to the partial!</div>'));
-    }
-
-    public function imageUploadAction() {
-	if ($_FILES) {
-		Application_Process_Uploads::runMethodInTransaction('uploadAndThumbImages');
-//		    NovumWare_Process_Uploads_Images::uploadImagesToDir(SITE_ROOT.'/public/uploads');
-//			$formName = 'uploadForm'; // the name of upload form
-//			$processResult = Application_Process_Main::runProcess('Application_Process_Image::saveImagesFromForm', array($formName)); // process images from the form
-	    }
-    }
-
-	// TODO MARK: is this working?
-    public function noAccessAction() {
-        throw new Exception('Needs to be implemented');
-    }
-
-
-    // ------------------------------------------------------------------ NovumWare Public Library ----------------------------------------------------------------------
-    public function novumwareAction() {}
-    public function nwGetPluginAction() {}
-    public function nwLoadingImageAction() {}
-    public function nwAjaxAction() {
-		$this->view->success = true;
-	}
-    public function nwLoadReplacesAction() {}
-    public function nwFlashMessageAction() {}
-    public function nwCallbacksAction() {}
-    public function nwBubbleAction() {}
-    public function nwClickOnLoadAction() {}
-    public function nwDatePickerAction() {}
-    public function nwDeleteAction() {}
-    public function nwDialogAction() {}
-    public function nwImageBookAction() {}
-    public function nwTooltipAction() {}
-    public function nwHintAction() {}
-    public function nwTourAction() {}
-    public function nwPopupAction() {}
-    public function nwTabsAction() {}
-    public function nwScrollAction() {}
-    public function nwRolloverImageAction() {}
-    public function nwFormAction() {}
-    public function nwUploadAction() {}
-	public function nwGalleryAction() {}
-
-    // ------------------------------------------------------------------ Rialto Javascripts ----------------------------------------------------------------------
-    public function jquerytoolstabsAction() {}
+	public function jquerytoolstabsAction() {}
 	public function jquerytoolsformvalidatorAction() {}
+	
+	
+	
+	public function zendAction() {}
+	public function partialAction() {}
+	public function partialEvalAction() {
+		$this->view->evaluatedPartial = $this->evalPartial('partials/example.tpl', array('example'=>'<div>GOGOGOGO</div>'));
+	}
+	public function imageUploadAction() {
+		if($this->_request->isPost()) {
+			$formName = 'uploadForm'; // the name of upload form
+			$processResult = Application_Process_Main::runProcess('Application_Process_Image::saveImagesFromForm', array($formName)); // process images from the form
+		}
+	}
 
+	
+	public function rialtoAction() {}
+	public function rialtoGetPluginAction() {}
+	public function rialtoCallbacksAction() {}
+	public function rialtoClickOnLoadAction() {}
+	public function rialtoDatePickerAction() {}
+	public function rialtoDeleteAction() {}
+	public function rialtoDialogAction() {}
+	public function rialtoFlashMessageAction() {}
+	public function rialtoImageBookAction() {}
+	public function rialtoLoadingImageAction() {}
+	public function rialtoLoadReplacesAction() {}
+	public function rialtoPopupAction() {}
+	public function rialtoScrollAction() {}
+	public function rialtoTabsAction() {}
+	public function rialtoTooltipAction() {}
 	public function rialtoEndingCallbackAction() {}
+	public function rialtoRolloverImageAction() {}
 	public function rialtoPaletteAction() {}
 	public function rialtoTableAccordionAction() {}
 	public function rialtoDropdownAction() {}
 	public function rialtoStarsAction() {}
-
+	
+	public function rialtoAjaxAction() {
+		$this->view->success = true;
+	}
+	
 	public function rialtoImageScrollSwitchAction() {
 	}
-
+	
 	public function rialtoPaginationAction() {
 		$this->rialtoPaginationLoad(10, 1);
 		$this->rialtoPaginationLoad(10, 3);
@@ -95,7 +83,9 @@ class ExamplesController extends Application_Controller
 		}
 		$this->view->elmts = $elmts;
 	}
-
+	
+	public function noAccessAction() {}
+	public function rialtoFormAction() {}
 	public function rialtoScrollableAction() {}
 	public function rialtoGalleryAction() {
 		$images = array();
@@ -106,16 +96,16 @@ class ExamplesController extends Application_Controller
 		}
 		$this->view->images = $images;
 	}
-
-
+	
+	
 	// FX
 	public function rialtoFxFadeOutAction() {}
 	public function rialtoFxFadeInAction() {}
 	public function rialtoFxHighlightAction() {}
-
-
+	
+	
 	// CSS
 	public function cssDropdownAction() {}
-
+	
 }
 

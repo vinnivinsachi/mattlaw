@@ -1,6 +1,6 @@
 <?php
 
-class ErrorController extends Application_Controller
+class ErrorController extends Custom_Zend_Controller_Action
 {
 	
     public function errorAction() {
@@ -62,9 +62,9 @@ class ErrorController extends Application_Controller
        		$bodyHtml = $this->view->render('error/error.tpl');
        	// create
        		$mail = new Zend_Mail('utf-8');
-       		$mail->addTo('markisacat@gmail.com');
+       		$mail->addTo('vedance.info@gmail.com');
 			$mail->setSubject('ERROR REPORT');
-			$mail->setFrom('admin@dancerialto.com','Dance Rialto');
+			$mail->setFrom('VEdance.info@gmail.com','VEdance LLC');
 			$mail->setBodyHtml($bodyHtml);
 			$mail->send();
     } // END sendErrorEmail()

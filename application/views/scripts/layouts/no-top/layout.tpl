@@ -11,7 +11,7 @@
 			</style>
 		{/literal}
 
-		{include file='layouts/partials/_content-top.tpl'}
+		{include file='layouts/partials/_content-top-tmp.tpl'}
 
 			{$this->flashMessenger()}<!-- PHP FLASH MESSENGER -->
 			{$layout->content}<!-- PAGE CONTENT -->

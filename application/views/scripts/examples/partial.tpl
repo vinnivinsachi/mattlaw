@@ -1,4 +1,4 @@
-{include file='partials/example.tpl'}
+{$this->partial('partials/example.tpl')}
 
-<br /><br />
-{literal}{include file='partials/example.tpl'}{/literal}
+
+<code>$this->partial('partials/example.tpl')</code>
