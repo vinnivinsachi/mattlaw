@@ -15,11 +15,14 @@ class IndexController extends Application_Controller
 	}	
         
         public function practiceAreaAction(){
-            
+            $contactForm = new Application_Form_ContactUs($this->getRequest()->getParam('contactUs'), 'contactUs');
+                $this->view->fp = $contactForm;
+
         }
         
         public function attorneyProfileAction(){
-            
+            $contactForm = new Application_Form_ContactUs($this->getRequest()->getParam('contactUs'), 'contactUs');
+                $this->view->fp = $contactForm;
         }
 	
 	

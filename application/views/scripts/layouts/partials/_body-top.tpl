@@ -1,3 +1,3 @@
-<body id='body' onload='initialize()' onUnload=''>
+<body id='body' >
 	
 <div id='wrapper'>
