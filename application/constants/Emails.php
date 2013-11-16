@@ -3,9 +3,9 @@
 class Application_Constants_Emails
 {
 	
-	static public $SENDER_NOTIFICATIONS = array('VEdance' => 'VEdance.info@gmail.com');
+	static public $SENDER_NOTIFICATIONS = array('Law office of Dusenberry' => 'vinzha@gmail.com');
 	
-	static public $REGISTER_VERIFY_EMAIL = array('registerVerifyEmail', 'Dance Rialto - Please Verify Your Email');
+	static public $CONTACT_NOTIFICATIONS = array('contact-us.tpl', 'Contact Notification');
 	static public $ORDER_CONFIRMATION = array('order/confirmation.tpl', 'Order confirmation');
 	
 }
