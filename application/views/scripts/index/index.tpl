@@ -80,7 +80,7 @@
 		</div>
                 <div>
                     
-                    <img src='{$dirImages}/index/experience.jpg' width=150 style='padding: 5px 5px 5px 0px; float: left;'/>
+                    <img src='{$dirImages}/Index/experience.jpg' width=150 style='padding: 5px 5px 5px 0px; float: left;'/>
 The attorneys of the Law Office of Dusenberry and Dusenberry in New York are skilled in handling cases ranging from drunk driving (DUI), domestic violence, traffic offenses, drug offenses, weapons offenses, sexual assault, internet crimes, homicide, and all other criminal matters. Our attorneys have had over 300 trials in their careers. Not only do we aggressively litigate cases, but our lawyers are also skilled negotiators.
                 
                 </div>
