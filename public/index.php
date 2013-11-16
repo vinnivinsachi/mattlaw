@@ -1,6 +1,7 @@
 <?php
 
 error_reporting(E_ALL ^ E_STRICT ^ E_NOTICE);
+date_default_timezone_set('America/New_York');
 
 // Define path to application directory
 defined('APPLICATION_PATH')
