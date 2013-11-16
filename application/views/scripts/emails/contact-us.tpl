@@ -1,4 +1,4 @@
-Thank you for you message<br/>
+You have received the following message from online:<br/>
 
 From: {$customer}<br/>
 Email: {$email}<br/>

@@ -41,8 +41,11 @@ class IndexController extends Application_Controller
                 if($formResult->success){
                     $formValues = $contactForm->getValues();
                     //Zend_Debug::dump($formValues);
-                    Application_Process_Emails::emailTemplate(Application_Constants_Emails::$CONTACT_NOTIFICATIONS, $formValues['email'], $formValues);
+                    Application_Process_Emails::emailTemplate(Application_Constants_Emails::$CONTACT_NOTIFICATIONS, Application_Constants_Emails::$SYSTEM_CONTACT, $formValues);
 
+                    Application_Process_Emails::emailTemplate(Application_Constants_Emails::$CONTACT_NOTIFICATION_CONFIRMATION, $formValues['email'], $formValues);
+
+                    $this->msg("Thank you for your inquiry, we will contact you shortly.");
                 }
                 
             $this->view->fp = $contactForm;
